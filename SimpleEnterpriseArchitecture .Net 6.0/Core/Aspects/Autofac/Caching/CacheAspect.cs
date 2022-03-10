@@ -15,12 +15,17 @@ namespace Core.Aspects.Autofac.Caching
         public CacheAspect(int duration=60)
         {
             _duration = duration;
-            _cacheManager = ServiceTool.ServiceProvider.GetService<ICacheManager>();
+            var cacheManager = ServiceTool.ServiceProvider.GetService<ICacheManager>();
+            if (cacheManager == null)
+            {
+                throw new System.Exception("Cache manager not be null.");
+            }
+            _cacheManager = cacheManager;
         }
 
         public override void Intercept(IInvocation invocation)
         {
-            var methodName = string.Format($"{invocation.Method.ReflectedType.FullName}.{invocation.Method.Name}");
+            var methodName = string.Format($"{invocation.Method?.ReflectedType?.FullName}.{invocation.Method?.Name}");
             var arguments = invocation.Arguments.ToList();
             var key = $"{methodName}({string.Join(",", arguments.Select(x => x?.ToString() ?? "<Null>"))})";
             if (_cacheManager.IsAdd(key))
@@ -32,19 +37,5 @@ namespace Core.Aspects.Autofac.Caching
             _cacheManager.Add(key,invocation.ReturnValue,_duration);
         }
 
-    }
-    public class CacheRemoveAspect : MethodInterception
-    {
-        private string _pattern;
-        private ICacheManager _cacheManager;
-        public CacheRemoveAspect(string pattern)
-        {
-            _pattern = pattern;
-            _cacheManager = ServiceTool.ServiceProvider.GetService<ICacheManager>();
-        }
-        protected override void OnSuccess(IInvocation invocation)
-        {
-            _cacheManager.RemoveByPattern(_pattern);
-        }
     }
 }

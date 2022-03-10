@@ -24,8 +24,13 @@ namespace Core.Aspects.Autofac.Validation
         }
         protected override void OnBefore(IInvocation invocation)
         {
-            var validator = (IValidator)Activator.CreateInstance(_validatorType);
-            var entityType = _validatorType.BaseType.GetGenericArguments()[0];
+            var validatorInstance = Activator.CreateInstance(_validatorType);
+            if (validatorInstance == null)
+            {
+                throw new System.Exception("Validator not be null.");
+            }
+            var validator = (IValidator)validatorInstance;
+            var entityType = _validatorType?.BaseType?.GetGenericArguments()[0];
             var entities = invocation.Arguments.Where(type => type.GetType() == entityType);
             foreach (var entity in entities)
             {

@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 
 namespace Core.Aspects.Autofac.Exception
 {
-    public class ExceptionLogAspect:MethodInterception
+    public class ExceptionLogAspect : MethodInterception
     {
         private BaseLoggerService _baseLoggerService;
 
@@ -20,7 +20,12 @@ namespace Core.Aspects.Autofac.Exception
             {
                 throw new System.Exception("Wrong Logger Type");
             }
-            _baseLoggerService = (BaseLoggerService)Activator.CreateInstance(loggerService);
+            var instance = Activator.CreateInstance(loggerService);
+            if (instance == null)
+            {
+                throw new System.Exception("Logger type not be null");
+            }
+            _baseLoggerService = (BaseLoggerService)instance;
         }
         protected override void OnException(IInvocation invocation, System.Exception e)
         {
@@ -34,15 +39,19 @@ namespace Core.Aspects.Autofac.Exception
             var logParameters = new List<LogParameter>();
             for (int i = 0; i < invocation.Arguments.Length; i++)
             {
-                logParameters.Add(new LogParameter() { 
-                    Name=invocation.GetConcreteMethod().GetParameters()[i].Name,
-                    Value=invocation.Arguments[i],
-                    Type=invocation.Arguments[i].GetType().Name
-                });
+                string? param = invocation.GetConcreteMethod().GetParameters()[i].Name;
+                if (param != null)
+                    logParameters.Add(new LogParameter()
+                    {
+                        Name =param,
+                        Value = invocation.Arguments[i],
+                        Type = invocation.Arguments[i].GetType().Name
+                    });
             }
-            return new LogDetailWithException() {
-                MethodName=invocation.Method.Name,
-                LogParameters=logParameters
+            return new LogDetailWithException()
+            {
+                MethodName = invocation.Method.Name,
+                LogParameters = logParameters
             };
         }
     }

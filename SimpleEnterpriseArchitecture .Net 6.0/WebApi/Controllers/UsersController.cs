@@ -24,7 +24,7 @@ namespace WebApi.Controllers
         [HttpGet]
         public IActionResult GetAll()
         {
-            return Ok(this._userService.GetAll(null));
+            return Ok(this._userService.GetAll());
         }
         [HttpPost("Add")]
         public IActionResult Add(User user)
