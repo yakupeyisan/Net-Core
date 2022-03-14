@@ -22,11 +22,11 @@ namespace Business.Concrete
             _userRepository = userRepository;
         }
 
-        public IDataResult<List<User>> GetAll(Expression<Func<User>> filter = null)
+        public IDataResult<List<User>> GetAll(Expression<Func<User,bool>> filter = null)
         {
             return new SuccessDataResult<List<User>>(this._userRepository.GetAll(filter),"Kullanıcılar listelendi");
         }
-        public IDataResult<User> Get(Expression<Func<User>> filter)
+        public IDataResult<User> Get(Expression<Func<User, bool>> filter)
         {
             return new SuccessDataResult<User>(this._userRepository.Get(filter), "Kullanıcı getirildi");
         }

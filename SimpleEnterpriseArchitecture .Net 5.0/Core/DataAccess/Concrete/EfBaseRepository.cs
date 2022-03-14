@@ -1,5 +1,6 @@
 ﻿using Core.DataAccess.Abstract;
 using Core.Entities;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,17 +10,30 @@ using System.Threading.Tasks;
 
 namespace Core.DataAccess.Concrete
 {
-    public abstract class EfBaseRepository<TEntity> : IBaseRepository<TEntity>
+    public abstract class EfBaseRepository<TEntity,TContext> : IBaseRepository<TEntity>
         where TEntity : class, IEntity, new()
+        where TContext: DbContext,new()
     {
         public virtual bool Add(TEntity entity)
         {
-            return true;
+            using (var context= new TContext())
+            {
+                var addedEntity = context.Entry(entity);
+                addedEntity.State = EntityState.Added;
+                context.SaveChanges();
+                return true;
+            }
         }
 
         public virtual bool Delete(TEntity entity)
         {
-            return false;
+            using (var context = new TContext())
+            {
+                var deletedEntity = context.Entry(entity);
+                deletedEntity.State = EntityState.Deleted;
+                context.SaveChanges();
+                return true;
+            }
         }
 
         public virtual TEntity Get(Expression<Func<TEntity>> filter)
@@ -34,7 +48,13 @@ namespace Core.DataAccess.Concrete
 
         public virtual bool Update(TEntity entity)
         {
-            return true;
+            using (var context = new TContext())
+            {
+                var updatedEntity = context.Entry(entity);
+                updatedEntity.State = EntityState.Modified;
+                context.SaveChanges();
+                return true;
+            }
         }
     }
 }
