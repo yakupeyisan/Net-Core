@@ -36,14 +36,22 @@ namespace Core.DataAccess.Concrete
             }
         }
 
-        public virtual TEntity Get(Expression<Func<TEntity>> filter)
+        public virtual TEntity Get(Expression<Func<TEntity,bool>> filter)
         {
-            return null;
+            using (var context = new TContext())
+            {
+                return context.Set<TEntity>().SingleOrDefault(filter);
+            }
         }
 
-        public virtual List<TEntity> GetAll(Expression<Func<TEntity>> filter = null)
+        public virtual List<TEntity> GetAll(Expression<Func<TEntity,bool>> filter = null)
         {
-            return new List<TEntity>();
+            using (var context = new TContext())
+            {
+                return (filter==null)?
+                    context.Set<TEntity>().ToList(): 
+                    context.Set<TEntity>().Where(filter).ToList();
+            }
         }
 
         public virtual bool Update(TEntity entity)
