@@ -12,8 +12,7 @@ namespace Business.ValidationRules.FluentValidation
     {
         public UserValidator()
         {
-            RuleFor(u => u.Email).NotEmpty();
-            RuleFor(u => u.Email).EmailAddress();
+            RuleFor(u => u.UserName).NotEmpty();
         }
     }
 }

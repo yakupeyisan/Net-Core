@@ -76,3 +76,5 @@ C:\Users\PC\source\repos\SimpleEnterpriseArchitecture\WebApi\obj\Debug\net5.0\We
 C:\Users\PC\source\repos\SimpleEnterpriseArchitecture\WebApi\obj\Debug\net5.0\ref\WebApi.dll
 C:\Users\PC\source\repos\SimpleEnterpriseArchitecture\WebApi\obj\Debug\net5.0\WebApi.pdb
 C:\Users\PC\source\repos\SimpleEnterpriseArchitecture\WebApi\obj\Debug\net5.0\WebApi.genruntimeconfig.cache
+C:\Users\PC\source\repos\SimpleEnterpriseArchitecture\WebApi\bin\Debug\net5.0\Humanizer.dll
+C:\Users\PC\source\repos\SimpleEnterpriseArchitecture\WebApi\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Design.dll

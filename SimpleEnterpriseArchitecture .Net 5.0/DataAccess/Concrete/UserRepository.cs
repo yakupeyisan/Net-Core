@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 
 namespace DataAccess.Concrete
 {
-    public class UserRepository:EfBaseRepository<User,StudentDbContext>,IUserRepository
+    public class UserRepository : EfBaseRepository<User, InstagramDbContext>, IUserRepository
     {
     }
 }
