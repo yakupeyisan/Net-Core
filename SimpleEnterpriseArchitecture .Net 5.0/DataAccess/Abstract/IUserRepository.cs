@@ -10,5 +10,6 @@ namespace DataAccess.Abstract
 {
     public interface IUserRepository : IBaseRepository<User>
     {
+        List<OperationClaim> GetClaims(User user);
     }
 }

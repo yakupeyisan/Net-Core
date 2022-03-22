@@ -2408,6 +2408,7 @@
         "framework": ".NETCoreApp,Version=v5.0",
         "dependencies": {
           "Castle.Core": "4.4.1",
+          "Entegrations": "1.0.0",
           "FluentValidation": "10.3.6",
           "Microsoft.AspNetCore.Http": "2.2.2",
           "Microsoft.AspNetCore.Http.Abstractions": "2.2.0",
@@ -2438,6 +2439,16 @@
         },
         "runtime": {
           "bin/placeholder/DataAccess.dll": {}
+        }
+      },
+      "Entegrations/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "compile": {
+          "bin/placeholder/Entegrations.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Entegrations.dll": {}
         }
       },
       "Entities/1.0.0": {
@@ -8051,6 +8062,11 @@
       "type": "project",
       "path": "../DataAccess/DataAccess.csproj",
       "msbuildProject": "../DataAccess/DataAccess.csproj"
+    },
+    "Entegrations/1.0.0": {
+      "type": "project",
+      "path": "../Entegrations/Entegrations.csproj",
+      "msbuildProject": "../Entegrations/Entegrations.csproj"
     },
     "Entities/1.0.0": {
       "type": "project",

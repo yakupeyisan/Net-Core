@@ -49,5 +49,10 @@ namespace Business.Concrete
             this._userRepository.Update(user);
             return new SuccessResult("Kişi güncellendi");
         }
+
+        public List<OperationClaim> GetClaims(User user)
+        {
+            return _userRepository.GetClaims(user);
+        }
     }
 }

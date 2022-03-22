@@ -1,4 +1,6 @@
-﻿using Core.CrossCuttingConcerns.Caching;
+﻿using Core.Abstract;
+using Core.Concrete;
+using Core.CrossCuttingConcerns.Caching;
 using Core.CrossCuttingConcerns.Caching.Microsoft;
 using Core.Utilities.IoC;
 using Microsoft.AspNetCore.Http;
@@ -19,6 +21,7 @@ namespace Core.DependencyResolvers
             services.AddMemoryCache();
             services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
             services.AddSingleton<ICacheManager, MemoryCacheManager>();
+            services.AddSingleton<IMailService, MailAdapter>();
             services.AddSingleton<Stopwatch>();
         }
     }

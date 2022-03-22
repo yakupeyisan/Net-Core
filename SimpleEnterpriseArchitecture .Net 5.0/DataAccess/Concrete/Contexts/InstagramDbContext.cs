@@ -23,14 +23,18 @@ namespace DataAccess.Concrete.Contexts
         {
             optionsBuilder.UseSqlServer(Configuration.GetConnectionString("DefaultConnection"));
         }
-        DbSet<User> Users { get; set; }
-        DbSet<Employee> Employees { get; set; }
-        DbSet<Account> Accounts { get; set; }
-        DbSet<AccountAvatar> AccountAvatars { get; set; }
-        DbSet<PostInformation> PostInformations { get; set; }
-        DbSet<PostTag> PostTags { get; set; }
-        DbSet<PostComment> PostComments { get; set; }
-        DbSet<PostLike> PostLikes { get; set; }
-        DbSet<TextMessage> TextMessages { get; set; }
+        public DbSet<User> Users { get; set; }
+        public DbSet<OperationClaim> OperationClaims { get; set; }
+        public DbSet<UserOperationClaim> UserOperationClaims { get; set; }
+        public DbSet<Employee> Employees { get; set; }
+        public DbSet<Account> Accounts { get; set; }
+        public DbSet<AccountAvatar> AccountAvatars { get; set; }
+        public DbSet<PostInformation> PostInformations { get; set; }
+        public DbSet<PostTag> PostTags { get; set; }
+        public DbSet<PostComment> PostComments { get; set; }
+        public DbSet<PostLike> PostLikes { get; set; }
+        public DbSet<TextMessage> TextMessages { get; set; }
+        public DbSet<MailTransaction> MailTransactions { get; set; }
+        public DbSet<VerificationCode> VerificationCodes { get; set; }
     }
 }

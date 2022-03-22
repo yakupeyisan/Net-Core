@@ -2285,6 +2285,16 @@
         "runtime": {
           "lib/netstandard1.3/System.Xml.XmlSerializer.dll": {}
         }
+      },
+      "Entegrations/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "compile": {
+          "bin/placeholder/Entegrations.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Entegrations.dll": {}
+        }
       }
     }
   },
@@ -7730,11 +7740,17 @@
         "system.xml.xmlserializer.4.3.0.nupkg.sha512",
         "system.xml.xmlserializer.nuspec"
       ]
+    },
+    "Entegrations/1.0.0": {
+      "type": "project",
+      "path": "../Entegrations/Entegrations.csproj",
+      "msbuildProject": "../Entegrations/Entegrations.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net5.0": [
       "Castle.Core >= 4.4.1",
+      "Entegrations >= 1.0.0",
       "FluentValidation >= 10.3.6",
       "Microsoft.AspNetCore.Http >= 2.2.2",
       "Microsoft.AspNetCore.Http.Abstractions >= 2.2.0",
@@ -7773,7 +7789,11 @@
       "frameworks": {
         "net5.0": {
           "targetAlias": "net5.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\PC\\source\\repos\\SimpleEnterpriseArchitecture\\Entegrations\\Entegrations.csproj": {
+              "projectPath": "C:\\Users\\PC\\source\\repos\\SimpleEnterpriseArchitecture\\Entegrations\\Entegrations.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
