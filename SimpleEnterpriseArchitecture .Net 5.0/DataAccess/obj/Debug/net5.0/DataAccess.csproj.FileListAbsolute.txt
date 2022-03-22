@@ -18,3 +18,5 @@ C:\Users\PC\source\repos\SimpleEnterpriseArchitecture\DataAccess\obj\Debug\net5.
 C:\Users\PC\source\repos\SimpleEnterpriseArchitecture\DataAccess\bin\Debug\net5.0\DataAccess.runtimeconfig.json
 C:\Users\PC\source\repos\SimpleEnterpriseArchitecture\DataAccess\bin\Debug\net5.0\DataAccess.runtimeconfig.dev.json
 C:\Users\PC\source\repos\SimpleEnterpriseArchitecture\DataAccess\obj\Debug\net5.0\DataAccess.genruntimeconfig.cache
+C:\Users\PC\source\repos\SimpleEnterpriseArchitecture\DataAccess\bin\Debug\net5.0\Entegrations.dll
+C:\Users\PC\source\repos\SimpleEnterpriseArchitecture\DataAccess\bin\Debug\net5.0\Entegrations.pdb

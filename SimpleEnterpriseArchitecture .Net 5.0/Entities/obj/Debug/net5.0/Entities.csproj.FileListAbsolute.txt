@@ -13,3 +13,5 @@ C:\Users\PC\source\repos\SimpleEnterpriseArchitecture\Entities\obj\Debug\net5.0\
 C:\Users\PC\source\repos\SimpleEnterpriseArchitecture\Entities\obj\Debug\net5.0\Entities.dll
 C:\Users\PC\source\repos\SimpleEnterpriseArchitecture\Entities\obj\Debug\net5.0\ref\Entities.dll
 C:\Users\PC\source\repos\SimpleEnterpriseArchitecture\Entities\obj\Debug\net5.0\Entities.pdb
+C:\Users\PC\source\repos\SimpleEnterpriseArchitecture\Entities\bin\Debug\net5.0\Entegrations.dll
+C:\Users\PC\source\repos\SimpleEnterpriseArchitecture\Entities\bin\Debug\net5.0\Entegrations.pdb
