@@ -1,4 +1,6 @@
 ﻿using Business.Abstract;
+using Business.ValidationRules.FluentValidation;
+using Core.Aspects.Autofac.Validation;
 using Core.Entities.Concrete;
 using Core.Utilities.Results;
 using Core.Utilities.Security.Hashing;
@@ -44,7 +46,7 @@ namespace Business.Concrete
             }
             return new SuccessDataResult<User>(checkUser.Data,"Kullacını girişi başarılı.");
         }
-
+        [ValidationAspect(typeof(RegisterValidator))]
         public IResult Register(UserForRegisterDto userForRegisterDto)
         {
             var check = this.UserExists(userForRegisterDto.UserName);

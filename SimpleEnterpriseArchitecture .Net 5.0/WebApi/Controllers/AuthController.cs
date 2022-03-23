@@ -9,8 +9,8 @@ using System.Threading.Tasks;
 
 namespace WebApi.Controllers
 {
-    [Route("api/[controller]")]
     [ApiController]
+    [Route("api/[controller]")]
     public class AuthController : ControllerBase
     {
         IAuthService _authService;
@@ -22,13 +22,12 @@ namespace WebApi.Controllers
         [HttpPost("register")]
         public IActionResult Register(UserForRegisterDto register)
         {
-            var result=_authService.Register(register);
+            var result = _authService.Register(register);
             if (!result.Success)
             {
                 return BadRequest(result.Message);
             }
             return Ok(result);
         }
-
     }
 }

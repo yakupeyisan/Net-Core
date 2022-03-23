@@ -14,6 +14,10 @@ using System.Linq;
 using System.Threading.Tasks;
 using Core.Utilities.IoC;
 using Core.DependencyResolvers;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.IdentityModel.Tokens;
+using Core.Utilities.Security.JWT;
+using Core.Utilities.Security.Encryption;
 
 namespace WebApi
 {
@@ -35,6 +39,23 @@ namespace WebApi
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "WebApi", Version = "v1" });
             });
+            services.AddCors();
+            var tokenOptions = Configuration.GetSection("TokenOptions").Get<TokenOptions>();
+            services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme).AddJwtBearer(
+                options =>
+                {
+                    options.TokenValidationParameters = new TokenValidationParameters()
+                    {
+                        ValidateIssuer = true,
+                        ValidateAudience = true,
+                        ValidateLifetime = true,
+                        ValidIssuer = tokenOptions.Issuer,
+                        ValidAudience = tokenOptions.Audience,
+                        ValidateIssuerSigningKey = true,
+                        IssuerSigningKey = SecurityKeyHelper.CreateSecurityKey(tokenOptions.SecurityKey)
+                    };
+                }
+                );
             //services.AddSingleton<IUserService, UserManager>();
             services.AddDependencyResolvers(new ICoreModule[] { new CoreModule() });
         }
@@ -50,9 +71,10 @@ namespace WebApi
                 app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "WebApi v1"));
             }
             app.ConfigureCustomExceptionMiddleware();
+            app.UseCors(builder=>builder.WithOrigins("*").AllowAnyHeader());
             app.UseHttpsRedirection();
             app.UseRouting();
-
+            app.UseAuthentication();
             app.UseAuthorization();
 
             app.UseEndpoints(endpoints =>
