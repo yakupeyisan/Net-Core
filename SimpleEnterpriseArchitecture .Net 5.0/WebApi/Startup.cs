@@ -40,6 +40,8 @@ namespace WebApi
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "WebApi", Version = "v1" });
             });
             services.AddCors();
+            
+            
             var tokenOptions = Configuration.GetSection("TokenOptions").Get<TokenOptions>();
             services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme).AddJwtBearer(
                 options =>
@@ -71,7 +73,10 @@ namespace WebApi
                 app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "WebApi v1"));
             }
             app.ConfigureCustomExceptionMiddleware();
-            app.UseCors(builder=>builder.WithOrigins("*").AllowAnyHeader());
+            app.UseCors(
+                builder=>
+                builder.WithOrigins("*").AllowAnyHeader()
+            );
             app.UseHttpsRedirection();
             app.UseRouting();
             app.UseAuthentication();

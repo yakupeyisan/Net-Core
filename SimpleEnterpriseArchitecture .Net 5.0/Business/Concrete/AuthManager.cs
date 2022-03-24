@@ -1,6 +1,9 @@
 ﻿using Business.Abstract;
 using Business.ValidationRules.FluentValidation;
+using Core.Abstract;
+using Core.Aspects.Autofac.Exception;
 using Core.Aspects.Autofac.Validation;
+using Core.CrossCuttingConcerns.Logging.Log4Net.Loggers;
 using Core.Entities.Concrete;
 using Core.Utilities.Results;
 using Core.Utilities.Security.Hashing;
@@ -19,11 +22,13 @@ namespace Business.Concrete
     {
         private IUserService _userService;
         private ITokenHelper _tokenHelper;
+        private IMailService _mailService;
 
-        public AuthManager(IUserService userService, ITokenHelper tokenHelper)
+        public AuthManager(IUserService userService, ITokenHelper tokenHelper,IMailService mailService)
         {
             _userService = userService;
             _tokenHelper = tokenHelper;
+            _mailService = mailService;
         }
         public IDataResult<AccessToken> CreateAccessToken(User user)
         {
@@ -46,6 +51,7 @@ namespace Business.Concrete
             }
             return new SuccessDataResult<User>(checkUser.Data,"Kullacını girişi başarılı.");
         }
+        [ExceptionLogAspect(typeof(DatabaseLogger))]
         [ValidationAspect(typeof(RegisterValidator))]
         public IResult Register(UserForRegisterDto userForRegisterDto)
         {
@@ -65,6 +71,7 @@ namespace Business.Concrete
                 PasswordSalt = passwordSalt,
             };
             _userService.Add(user);
+            _mailService.Send(userForRegisterDto.Email, "Yeni Üyelik", "Doğrulama falan filan mail.");
             return new SuccessResult("Kayıt işlemi başarılı.");
 
         }
