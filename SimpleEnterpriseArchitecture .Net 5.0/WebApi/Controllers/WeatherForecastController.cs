@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Core.Utilities.Tools;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using System;
 using System.Collections.Generic;
@@ -23,7 +24,7 @@ namespace WebApi.Controllers
             _logger = logger;
         }
 
-        [HttpGet]
+        [HttpGet("get")]
         public IEnumerable<WeatherForecast> Get()
         {
             var rng = new Random();
@@ -34,6 +35,11 @@ namespace WebApi.Controllers
                 Summary = Summaries[rng.Next(Summaries.Length)]
             })
             .ToArray();
+        }
+        [HttpGet("generate")]
+        public IActionResult Generate()
+        {
+            return Ok(RandomCodeGenerator.Generate());
         }
     }
 }

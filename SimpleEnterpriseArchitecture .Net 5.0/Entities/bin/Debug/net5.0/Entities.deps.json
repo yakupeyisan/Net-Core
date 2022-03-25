@@ -1492,8 +1492,8 @@
       "Core/1.0.0": {
         "dependencies": {
           "Castle.Core": "4.4.1",
-          "Entegrations": "1.0.0",
           "FluentValidation": "10.3.6",
+          "Integrations": "1.0.0",
           "Microsoft.AspNetCore.Http": "2.2.2",
           "Microsoft.AspNetCore.Http.Abstractions": "2.2.0",
           "Microsoft.EntityFrameworkCore": "5.0.14",
@@ -1506,9 +1506,9 @@
           "Core.dll": {}
         }
       },
-      "Entegrations/1.0.0": {
+      "Integrations/1.0.0": {
         "runtime": {
-          "Entegrations.dll": {}
+          "Integrations.dll": {}
         }
       }
     }
@@ -2497,7 +2497,7 @@
       "serviceable": false,
       "sha512": ""
     },
-    "Entegrations/1.0.0": {
+    "Integrations/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

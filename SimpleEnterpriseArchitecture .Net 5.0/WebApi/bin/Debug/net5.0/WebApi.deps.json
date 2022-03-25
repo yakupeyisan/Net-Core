@@ -1865,8 +1865,8 @@
       "Core/1.0.0": {
         "dependencies": {
           "Castle.Core": "4.4.1",
-          "Entegrations": "1.0.0",
           "FluentValidation": "10.3.6",
+          "Integrations": "1.0.0",
           "Microsoft.AspNetCore.Http": "2.2.2",
           "Microsoft.AspNetCore.Http.Abstractions": "2.2.0",
           "Microsoft.EntityFrameworkCore": "5.0.15",
@@ -1896,14 +1896,6 @@
           "DataAccess.dll": {}
         }
       },
-      "Entegrations/1.0.0": {
-        "runtime": {
-          "Entegrations.dll": {}
-        },
-        "compile": {
-          "Entegrations.dll": {}
-        }
-      },
       "Entities/1.0.0": {
         "dependencies": {
           "Core": "1.0.0"
@@ -1913,6 +1905,14 @@
         },
         "compile": {
           "Entities.dll": {}
+        }
+      },
+      "Integrations/1.0.0": {
+        "runtime": {
+          "Integrations.dll": {}
+        },
+        "compile": {
+          "Integrations.dll": {}
         }
       },
       "Microsoft.AspNetCore.Antiforgery/5.0.0.0": {
@@ -4657,12 +4657,12 @@
       "serviceable": false,
       "sha512": ""
     },
-    "Entegrations/1.0.0": {
+    "Entities/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
     },
-    "Entities/1.0.0": {
+    "Integrations/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

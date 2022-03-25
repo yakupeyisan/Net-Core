@@ -1,0 +1,12 @@
+C:\Users\PC\source\repos\SimpleEnterpriseArchitecture\Integrations\bin\Debug\net5.0\Integrations.deps.json
+C:\Users\PC\source\repos\SimpleEnterpriseArchitecture\Integrations\bin\Debug\net5.0\Integrations.dll
+C:\Users\PC\source\repos\SimpleEnterpriseArchitecture\Integrations\bin\Debug\net5.0\ref\Integrations.dll
+C:\Users\PC\source\repos\SimpleEnterpriseArchitecture\Integrations\bin\Debug\net5.0\Integrations.pdb
+C:\Users\PC\source\repos\SimpleEnterpriseArchitecture\Integrations\obj\Debug\net5.0\Integrations.csproj.AssemblyReference.cache
+C:\Users\PC\source\repos\SimpleEnterpriseArchitecture\Integrations\obj\Debug\net5.0\Integrations.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\PC\source\repos\SimpleEnterpriseArchitecture\Integrations\obj\Debug\net5.0\Integrations.AssemblyInfoInputs.cache
+C:\Users\PC\source\repos\SimpleEnterpriseArchitecture\Integrations\obj\Debug\net5.0\Integrations.AssemblyInfo.cs
+C:\Users\PC\source\repos\SimpleEnterpriseArchitecture\Integrations\obj\Debug\net5.0\Integrations.csproj.CoreCompileInputs.cache
+C:\Users\PC\source\repos\SimpleEnterpriseArchitecture\Integrations\obj\Debug\net5.0\Integrations.dll
+C:\Users\PC\source\repos\SimpleEnterpriseArchitecture\Integrations\obj\Debug\net5.0\ref\Integrations.dll
+C:\Users\PC\source\repos\SimpleEnterpriseArchitecture\Integrations\obj\Debug\net5.0\Integrations.pdb

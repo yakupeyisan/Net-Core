@@ -64,12 +64,10 @@ C:\Users\PC\source\repos\SimpleEnterpriseArchitecture\WebApi\bin\Debug\net5.0\ru
 C:\Users\PC\source\repos\SimpleEnterpriseArchitecture\WebApi\bin\Debug\net5.0\Business.dll
 C:\Users\PC\source\repos\SimpleEnterpriseArchitecture\WebApi\bin\Debug\net5.0\Core.dll
 C:\Users\PC\source\repos\SimpleEnterpriseArchitecture\WebApi\bin\Debug\net5.0\DataAccess.dll
-C:\Users\PC\source\repos\SimpleEnterpriseArchitecture\WebApi\bin\Debug\net5.0\Entegrations.dll
 C:\Users\PC\source\repos\SimpleEnterpriseArchitecture\WebApi\bin\Debug\net5.0\Entities.dll
 C:\Users\PC\source\repos\SimpleEnterpriseArchitecture\WebApi\bin\Debug\net5.0\Business.pdb
 C:\Users\PC\source\repos\SimpleEnterpriseArchitecture\WebApi\bin\Debug\net5.0\Core.pdb
 C:\Users\PC\source\repos\SimpleEnterpriseArchitecture\WebApi\bin\Debug\net5.0\DataAccess.pdb
-C:\Users\PC\source\repos\SimpleEnterpriseArchitecture\WebApi\bin\Debug\net5.0\Entegrations.pdb
 C:\Users\PC\source\repos\SimpleEnterpriseArchitecture\WebApi\bin\Debug\net5.0\Entities.pdb
 C:\Users\PC\source\repos\SimpleEnterpriseArchitecture\WebApi\obj\Debug\net5.0\staticwebassets\WebApi.StaticWebAssets.Manifest.cache
 C:\Users\PC\source\repos\SimpleEnterpriseArchitecture\WebApi\obj\Debug\net5.0\staticwebassets\WebApi.StaticWebAssets.xml
@@ -81,3 +79,5 @@ C:\Users\PC\source\repos\SimpleEnterpriseArchitecture\WebApi\obj\Debug\net5.0\re
 C:\Users\PC\source\repos\SimpleEnterpriseArchitecture\WebApi\obj\Debug\net5.0\WebApi.pdb
 C:\Users\PC\source\repos\SimpleEnterpriseArchitecture\WebApi\obj\Debug\net5.0\WebApi.genruntimeconfig.cache
 C:\Users\PC\source\repos\SimpleEnterpriseArchitecture\WebApi\bin\Debug\net5.0\Newtonsoft.Json.dll
+C:\Users\PC\source\repos\SimpleEnterpriseArchitecture\WebApi\bin\Debug\net5.0\Integrations.dll
+C:\Users\PC\source\repos\SimpleEnterpriseArchitecture\WebApi\bin\Debug\net5.0\Integrations.pdb

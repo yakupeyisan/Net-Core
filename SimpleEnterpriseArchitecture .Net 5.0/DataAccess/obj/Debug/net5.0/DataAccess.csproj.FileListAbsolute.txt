@@ -5,11 +5,9 @@ C:\Users\PC\source\repos\SimpleEnterpriseArchitecture\DataAccess\bin\Debug\net5.
 C:\Users\PC\source\repos\SimpleEnterpriseArchitecture\DataAccess\bin\Debug\net5.0\ref\DataAccess.dll
 C:\Users\PC\source\repos\SimpleEnterpriseArchitecture\DataAccess\bin\Debug\net5.0\DataAccess.pdb
 C:\Users\PC\source\repos\SimpleEnterpriseArchitecture\DataAccess\bin\Debug\net5.0\Core.dll
-C:\Users\PC\source\repos\SimpleEnterpriseArchitecture\DataAccess\bin\Debug\net5.0\Entegrations.dll
 C:\Users\PC\source\repos\SimpleEnterpriseArchitecture\DataAccess\bin\Debug\net5.0\Entities.dll
 C:\Users\PC\source\repos\SimpleEnterpriseArchitecture\DataAccess\bin\Debug\net5.0\Core.pdb
 C:\Users\PC\source\repos\SimpleEnterpriseArchitecture\DataAccess\bin\Debug\net5.0\Entities.pdb
-C:\Users\PC\source\repos\SimpleEnterpriseArchitecture\DataAccess\bin\Debug\net5.0\Entegrations.pdb
 C:\Users\PC\source\repos\SimpleEnterpriseArchitecture\DataAccess\obj\Debug\net5.0\DataAccess.csproj.AssemblyReference.cache
 C:\Users\PC\source\repos\SimpleEnterpriseArchitecture\DataAccess\obj\Debug\net5.0\DataAccess.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\PC\source\repos\SimpleEnterpriseArchitecture\DataAccess\obj\Debug\net5.0\DataAccess.AssemblyInfoInputs.cache
@@ -20,3 +18,5 @@ C:\Users\PC\source\repos\SimpleEnterpriseArchitecture\DataAccess\obj\Debug\net5.
 C:\Users\PC\source\repos\SimpleEnterpriseArchitecture\DataAccess\obj\Debug\net5.0\ref\DataAccess.dll
 C:\Users\PC\source\repos\SimpleEnterpriseArchitecture\DataAccess\obj\Debug\net5.0\DataAccess.pdb
 C:\Users\PC\source\repos\SimpleEnterpriseArchitecture\DataAccess\obj\Debug\net5.0\DataAccess.genruntimeconfig.cache
+C:\Users\PC\source\repos\SimpleEnterpriseArchitecture\DataAccess\bin\Debug\net5.0\Integrations.dll
+C:\Users\PC\source\repos\SimpleEnterpriseArchitecture\DataAccess\bin\Debug\net5.0\Integrations.pdb

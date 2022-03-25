@@ -4,12 +4,10 @@ C:\Users\PC\source\repos\SimpleEnterpriseArchitecture\Business\bin\Debug\net5.0\
 C:\Users\PC\source\repos\SimpleEnterpriseArchitecture\Business\bin\Debug\net5.0\Business.pdb
 C:\Users\PC\source\repos\SimpleEnterpriseArchitecture\Business\bin\Debug\net5.0\Core.dll
 C:\Users\PC\source\repos\SimpleEnterpriseArchitecture\Business\bin\Debug\net5.0\DataAccess.dll
-C:\Users\PC\source\repos\SimpleEnterpriseArchitecture\Business\bin\Debug\net5.0\Entegrations.dll
 C:\Users\PC\source\repos\SimpleEnterpriseArchitecture\Business\bin\Debug\net5.0\Entities.dll
 C:\Users\PC\source\repos\SimpleEnterpriseArchitecture\Business\bin\Debug\net5.0\DataAccess.pdb
 C:\Users\PC\source\repos\SimpleEnterpriseArchitecture\Business\bin\Debug\net5.0\Entities.pdb
 C:\Users\PC\source\repos\SimpleEnterpriseArchitecture\Business\bin\Debug\net5.0\Core.pdb
-C:\Users\PC\source\repos\SimpleEnterpriseArchitecture\Business\bin\Debug\net5.0\Entegrations.pdb
 C:\Users\PC\source\repos\SimpleEnterpriseArchitecture\Business\obj\Debug\net5.0\Business.csproj.AssemblyReference.cache
 C:\Users\PC\source\repos\SimpleEnterpriseArchitecture\Business\obj\Debug\net5.0\Business.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\PC\source\repos\SimpleEnterpriseArchitecture\Business\obj\Debug\net5.0\Business.AssemblyInfoInputs.cache
@@ -19,3 +17,5 @@ C:\Users\PC\source\repos\SimpleEnterpriseArchitecture\Business\obj\Debug\net5.0\
 C:\Users\PC\source\repos\SimpleEnterpriseArchitecture\Business\obj\Debug\net5.0\Business.dll
 C:\Users\PC\source\repos\SimpleEnterpriseArchitecture\Business\obj\Debug\net5.0\ref\Business.dll
 C:\Users\PC\source\repos\SimpleEnterpriseArchitecture\Business\obj\Debug\net5.0\Business.pdb
+C:\Users\PC\source\repos\SimpleEnterpriseArchitecture\Business\bin\Debug\net5.0\Integrations.dll
+C:\Users\PC\source\repos\SimpleEnterpriseArchitecture\Business\bin\Debug\net5.0\Integrations.pdb

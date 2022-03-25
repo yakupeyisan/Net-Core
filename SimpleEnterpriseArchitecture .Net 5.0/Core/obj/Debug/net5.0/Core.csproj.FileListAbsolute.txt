@@ -4,8 +4,6 @@ C:\Users\PC\source\repos\SimpleEnterpriseArchitecture\Core\bin\Debug\net5.0\Core
 C:\Users\PC\source\repos\SimpleEnterpriseArchitecture\Core\bin\Debug\net5.0\Core.dll
 C:\Users\PC\source\repos\SimpleEnterpriseArchitecture\Core\bin\Debug\net5.0\ref\Core.dll
 C:\Users\PC\source\repos\SimpleEnterpriseArchitecture\Core\bin\Debug\net5.0\Core.pdb
-C:\Users\PC\source\repos\SimpleEnterpriseArchitecture\Core\bin\Debug\net5.0\Entegrations.dll
-C:\Users\PC\source\repos\SimpleEnterpriseArchitecture\Core\bin\Debug\net5.0\Entegrations.pdb
 C:\Users\PC\source\repos\SimpleEnterpriseArchitecture\Core\obj\Debug\net5.0\Core.csproj.AssemblyReference.cache
 C:\Users\PC\source\repos\SimpleEnterpriseArchitecture\Core\obj\Debug\net5.0\Core.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\PC\source\repos\SimpleEnterpriseArchitecture\Core\obj\Debug\net5.0\Core.AssemblyInfoInputs.cache
@@ -16,3 +14,5 @@ C:\Users\PC\source\repos\SimpleEnterpriseArchitecture\Core\obj\Debug\net5.0\Core
 C:\Users\PC\source\repos\SimpleEnterpriseArchitecture\Core\obj\Debug\net5.0\ref\Core.dll
 C:\Users\PC\source\repos\SimpleEnterpriseArchitecture\Core\obj\Debug\net5.0\Core.pdb
 C:\Users\PC\source\repos\SimpleEnterpriseArchitecture\Core\obj\Debug\net5.0\Core.genruntimeconfig.cache
+C:\Users\PC\source\repos\SimpleEnterpriseArchitecture\Core\bin\Debug\net5.0\Integrations.dll
+C:\Users\PC\source\repos\SimpleEnterpriseArchitecture\Core\bin\Debug\net5.0\Integrations.pdb

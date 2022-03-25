@@ -2291,8 +2291,8 @@
         "framework": ".NETCoreApp,Version=v5.0",
         "dependencies": {
           "Castle.Core": "4.4.1",
-          "Entegrations": "1.0.0",
           "FluentValidation": "10.3.6",
+          "Integrations": "1.0.0",
           "Microsoft.AspNetCore.Http": "2.2.2",
           "Microsoft.AspNetCore.Http.Abstractions": "2.2.0",
           "Microsoft.EntityFrameworkCore": "5.0.14",
@@ -2308,16 +2308,6 @@
           "bin/placeholder/Core.dll": {}
         }
       },
-      "Entegrations/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v5.0",
-        "compile": {
-          "bin/placeholder/Entegrations.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/Entegrations.dll": {}
-        }
-      },
       "Entities/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v5.0",
@@ -2329,6 +2319,16 @@
         },
         "runtime": {
           "bin/placeholder/Entities.dll": {}
+        }
+      },
+      "Integrations/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "compile": {
+          "bin/placeholder/Integrations.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Integrations.dll": {}
         }
       }
     }
@@ -7781,15 +7781,15 @@
       "path": "../Core/Core.csproj",
       "msbuildProject": "../Core/Core.csproj"
     },
-    "Entegrations/1.0.0": {
-      "type": "project",
-      "path": "../Entegrations/Entegrations.csproj",
-      "msbuildProject": "../Entegrations/Entegrations.csproj"
-    },
     "Entities/1.0.0": {
       "type": "project",
       "path": "../Entities/Entities.csproj",
       "msbuildProject": "../Entities/Entities.csproj"
+    },
+    "Integrations/1.0.0": {
+      "type": "project",
+      "path": "../Integrations/Integrations.csproj",
+      "msbuildProject": "../Integrations/Integrations.csproj"
     }
   },
   "projectFileDependencyGroups": {

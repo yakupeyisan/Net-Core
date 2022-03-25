@@ -2,6 +2,7 @@
 using Business.ValidationRules.FluentValidation;
 using Core.Abstract;
 using Core.Aspects.Autofac.Exception;
+using Core.Aspects.Autofac.Mailer;
 using Core.Aspects.Autofac.Validation;
 using Core.CrossCuttingConcerns.Logging.Log4Net.Loggers;
 using Core.Entities.Concrete;
@@ -24,6 +25,7 @@ namespace Business.Concrete
         private ITokenHelper _tokenHelper;
         private IMailService _mailService;
 
+        public string MailContent = "";
         public AuthManager(IUserService userService, ITokenHelper tokenHelper,IMailService mailService)
         {
             _userService = userService;
@@ -53,6 +55,7 @@ namespace Business.Concrete
         }
         [ExceptionLogAspect(typeof(DatabaseLogger))]
         [ValidationAspect(typeof(RegisterValidator))]
+        [SuccessMailAspect(typeof(VerificationMailType))]
         public IResult Register(UserForRegisterDto userForRegisterDto)
         {
             var check = this.UserExists(userForRegisterDto.UserName);
@@ -71,7 +74,7 @@ namespace Business.Concrete
                 PasswordSalt = passwordSalt,
             };
             _userService.Add(user);
-            _mailService.Send(userForRegisterDto.Email, "Yeni Üyelik", "Doğrulama falan filan mail.");
+            //_mailService.Send(userForRegisterDto.Email, "Yeni Üyelik", MailContent.Replace("{name}",userForRegisterDto.FullName).Replace("{code}","1234").Replace("{id}",user.Id.ToString()) );
             return new SuccessResult("Kayıt işlemi başarılı.");
 
         }

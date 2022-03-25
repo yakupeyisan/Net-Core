@@ -28,8 +28,8 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "C:\\Users\\PC\\source\\repos\\SimpleEnterpriseArchitecture\\Entegrations\\Entegrations.csproj": {
-                "projectPath": "C:\\Users\\PC\\source\\repos\\SimpleEnterpriseArchitecture\\Entegrations\\Entegrations.csproj"
+              "C:\\Users\\PC\\source\\repos\\SimpleEnterpriseArchitecture\\Integrations\\Integrations.csproj": {
+                "projectPath": "C:\\Users\\PC\\source\\repos\\SimpleEnterpriseArchitecture\\Integrations\\Integrations.csproj"
               }
             }
           }
@@ -112,14 +112,14 @@
         }
       }
     },
-    "C:\\Users\\PC\\source\\repos\\SimpleEnterpriseArchitecture\\Entegrations\\Entegrations.csproj": {
+    "C:\\Users\\PC\\source\\repos\\SimpleEnterpriseArchitecture\\Entities\\Entities.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\PC\\source\\repos\\SimpleEnterpriseArchitecture\\Entegrations\\Entegrations.csproj",
-        "projectName": "Entegrations",
-        "projectPath": "C:\\Users\\PC\\source\\repos\\SimpleEnterpriseArchitecture\\Entegrations\\Entegrations.csproj",
+        "projectUniqueName": "C:\\Users\\PC\\source\\repos\\SimpleEnterpriseArchitecture\\Entities\\Entities.csproj",
+        "projectName": "Entities",
+        "projectPath": "C:\\Users\\PC\\source\\repos\\SimpleEnterpriseArchitecture\\Entities\\Entities.csproj",
         "packagesPath": "C:\\Users\\PC\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\PC\\source\\repos\\SimpleEnterpriseArchitecture\\Entegrations\\obj\\",
+        "outputPath": "C:\\Users\\PC\\source\\repos\\SimpleEnterpriseArchitecture\\Entities\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\PC\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -135,7 +135,11 @@
         "frameworks": {
           "net5.0": {
             "targetAlias": "net5.0",
-            "projectReferences": {}
+            "projectReferences": {
+              "C:\\Users\\PC\\source\\repos\\SimpleEnterpriseArchitecture\\Core\\Core.csproj": {
+                "projectPath": "C:\\Users\\PC\\source\\repos\\SimpleEnterpriseArchitecture\\Core\\Core.csproj"
+              }
+            }
           }
         },
         "warningProperties": {
@@ -166,14 +170,14 @@
         }
       }
     },
-    "C:\\Users\\PC\\source\\repos\\SimpleEnterpriseArchitecture\\Entities\\Entities.csproj": {
+    "C:\\Users\\PC\\source\\repos\\SimpleEnterpriseArchitecture\\Integrations\\Integrations.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\PC\\source\\repos\\SimpleEnterpriseArchitecture\\Entities\\Entities.csproj",
-        "projectName": "Entities",
-        "projectPath": "C:\\Users\\PC\\source\\repos\\SimpleEnterpriseArchitecture\\Entities\\Entities.csproj",
+        "projectUniqueName": "C:\\Users\\PC\\source\\repos\\SimpleEnterpriseArchitecture\\Integrations\\Integrations.csproj",
+        "projectName": "Integrations",
+        "projectPath": "C:\\Users\\PC\\source\\repos\\SimpleEnterpriseArchitecture\\Integrations\\Integrations.csproj",
         "packagesPath": "C:\\Users\\PC\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\PC\\source\\repos\\SimpleEnterpriseArchitecture\\Entities\\obj\\",
+        "outputPath": "C:\\Users\\PC\\source\\repos\\SimpleEnterpriseArchitecture\\Integrations\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\PC\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -189,11 +193,7 @@
         "frameworks": {
           "net5.0": {
             "targetAlias": "net5.0",
-            "projectReferences": {
-              "C:\\Users\\PC\\source\\repos\\SimpleEnterpriseArchitecture\\Core\\Core.csproj": {
-                "projectPath": "C:\\Users\\PC\\source\\repos\\SimpleEnterpriseArchitecture\\Core\\Core.csproj"
-              }
-            }
+            "projectReferences": {}
           }
         },
         "warningProperties": {
