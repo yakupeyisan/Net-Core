@@ -86,6 +86,7 @@ namespace WebApi
             {
                 endpoints.MapControllers();
             });
+            ServiceTool.RootPath = env.WebRootPath;
         }
     }
 }

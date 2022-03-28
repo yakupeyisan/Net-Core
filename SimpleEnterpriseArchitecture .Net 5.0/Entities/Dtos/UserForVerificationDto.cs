@@ -4,7 +4,7 @@ namespace Entities.Dtos
 {
     public class UserForVerificationDto : IDto
     {
-        public int EmailId { get; set; }
+        public int UserId { get; set; }
         public string Code { get; set; }
     }
 }

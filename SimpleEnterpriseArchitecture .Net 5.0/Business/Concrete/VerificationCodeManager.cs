@@ -1,7 +1,10 @@
 ﻿using Business.Abstract;
+using Core.Entities.Concrete;
+using Core.Utilities.FileOperations;
 using Core.Utilities.Results;
 using DataAccess.Abstract;
 using Entities.Concrete;
+using Entities.Dtos;
 using System;
 using System.Collections.Generic;
 using System.Linq.Expressions;
@@ -11,10 +14,12 @@ namespace Business.Concrete
     public class VerificationCodeManager : IVerificationCodeService
     {
         private IVerificationCodeRepository _verificationCodeRepository;
+        private IMailTransactionService _mailTransactionService;
 
-        public VerificationCodeManager(IVerificationCodeRepository verificationCodeRepository)
+        public VerificationCodeManager(IVerificationCodeRepository verificationCodeRepository, IMailTransactionService mailTransactionService)
         {
             _verificationCodeRepository = verificationCodeRepository;
+            _mailTransactionService = mailTransactionService;
         }
 
         public IDataResult<List<VerificationCode>> GetAll(Expression<Func<VerificationCode, bool>> filter = null)
@@ -33,6 +38,27 @@ namespace Business.Concrete
         {
             _verificationCodeRepository.Add(verificationCode);
             return new SuccessResult("Doğrulama kodu eklendi.");
+        }
+        public IResult AddAndSendMail(VerificationCode verificationCode, User user, string email)
+        {
+            _verificationCodeRepository.Add(verificationCode);
+
+            var content = FileOperation.ReadHtmlTemplate("new-account-email");
+            content = content.Replace("{FullName}", user.FullName);
+            content = content.Replace("{Id}", user.Id.ToString());
+            content = content.Replace("{code}", verificationCode.Code);
+            content = content.Replace("\\r\\n", "");
+            var mailTransaction = new MailTransaction()
+            {
+                UserId = user.Id,
+                MailAddress = email,
+                Subject = "Yeni Üyelik",
+                Content = content,
+                SendDate = DateTime.Now,
+                Status = false
+            };
+            _mailTransactionService.Add(mailTransaction);
+            return new SuccessResult("Doğrulama oluşturuldu. Mail adresinizi kontrol ediniz.");
         }
         public IResult Update(VerificationCode verificationCode)
         {

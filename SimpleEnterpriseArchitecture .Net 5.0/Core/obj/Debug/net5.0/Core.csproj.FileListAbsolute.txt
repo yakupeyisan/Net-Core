@@ -16,3 +16,21 @@ C:\Users\PC\source\repos\SimpleEnterpriseArchitecture\Core\obj\Debug\net5.0\Core
 C:\Users\PC\source\repos\SimpleEnterpriseArchitecture\Core\obj\Debug\net5.0\Core.genruntimeconfig.cache
 C:\Users\PC\source\repos\SimpleEnterpriseArchitecture\Core\bin\Debug\net5.0\Integrations.dll
 C:\Users\PC\source\repos\SimpleEnterpriseArchitecture\Core\bin\Debug\net5.0\Integrations.pdb
+C:\Users\OrioN\Documents\GitHub\Net-Core\SimpleEnterpriseArchitecture .Net 5.0\Core\bin\Debug\net5.0\Core.deps.json
+C:\Users\OrioN\Documents\GitHub\Net-Core\SimpleEnterpriseArchitecture .Net 5.0\Core\bin\Debug\net5.0\Core.runtimeconfig.json
+C:\Users\OrioN\Documents\GitHub\Net-Core\SimpleEnterpriseArchitecture .Net 5.0\Core\bin\Debug\net5.0\Core.runtimeconfig.dev.json
+C:\Users\OrioN\Documents\GitHub\Net-Core\SimpleEnterpriseArchitecture .Net 5.0\Core\bin\Debug\net5.0\Core.dll
+C:\Users\OrioN\Documents\GitHub\Net-Core\SimpleEnterpriseArchitecture .Net 5.0\Core\bin\Debug\net5.0\ref\Core.dll
+C:\Users\OrioN\Documents\GitHub\Net-Core\SimpleEnterpriseArchitecture .Net 5.0\Core\bin\Debug\net5.0\Core.pdb
+C:\Users\OrioN\Documents\GitHub\Net-Core\SimpleEnterpriseArchitecture .Net 5.0\Core\bin\Debug\net5.0\Integrations.dll
+C:\Users\OrioN\Documents\GitHub\Net-Core\SimpleEnterpriseArchitecture .Net 5.0\Core\bin\Debug\net5.0\Integrations.pdb
+C:\Users\OrioN\Documents\GitHub\Net-Core\SimpleEnterpriseArchitecture .Net 5.0\Core\obj\Debug\net5.0\Core.csproj.AssemblyReference.cache
+C:\Users\OrioN\Documents\GitHub\Net-Core\SimpleEnterpriseArchitecture .Net 5.0\Core\obj\Debug\net5.0\Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\OrioN\Documents\GitHub\Net-Core\SimpleEnterpriseArchitecture .Net 5.0\Core\obj\Debug\net5.0\Core.AssemblyInfoInputs.cache
+C:\Users\OrioN\Documents\GitHub\Net-Core\SimpleEnterpriseArchitecture .Net 5.0\Core\obj\Debug\net5.0\Core.AssemblyInfo.cs
+C:\Users\OrioN\Documents\GitHub\Net-Core\SimpleEnterpriseArchitecture .Net 5.0\Core\obj\Debug\net5.0\Core.csproj.CoreCompileInputs.cache
+C:\Users\OrioN\Documents\GitHub\Net-Core\SimpleEnterpriseArchitecture .Net 5.0\Core\obj\Debug\net5.0\Core.csproj.CopyComplete
+C:\Users\OrioN\Documents\GitHub\Net-Core\SimpleEnterpriseArchitecture .Net 5.0\Core\obj\Debug\net5.0\Core.dll
+C:\Users\OrioN\Documents\GitHub\Net-Core\SimpleEnterpriseArchitecture .Net 5.0\Core\obj\Debug\net5.0\ref\Core.dll
+C:\Users\OrioN\Documents\GitHub\Net-Core\SimpleEnterpriseArchitecture .Net 5.0\Core\obj\Debug\net5.0\Core.pdb
+C:\Users\OrioN\Documents\GitHub\Net-Core\SimpleEnterpriseArchitecture .Net 5.0\Core\obj\Debug\net5.0\Core.genruntimeconfig.cache

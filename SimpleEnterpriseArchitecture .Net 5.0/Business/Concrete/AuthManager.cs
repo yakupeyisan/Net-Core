@@ -2,7 +2,6 @@
 using Business.ValidationRules.FluentValidation;
 using Core.Abstract;
 using Core.Aspects.Autofac.Exception;
-using Core.Aspects.Autofac.Mailer;
 using Core.Aspects.Autofac.Validation;
 using Core.CrossCuttingConcerns.Logging.Log4Net.Loggers;
 using Core.Entities.Concrete;
@@ -23,14 +22,12 @@ namespace Business.Concrete
     {
         private IUserService _userService;
         private ITokenHelper _tokenHelper;
-        private IMailService _mailService;
 
         public string MailContent = "";
-        public AuthManager(IUserService userService, ITokenHelper tokenHelper,IMailService mailService)
+        public AuthManager(IUserService userService, ITokenHelper tokenHelper)
         {
             _userService = userService;
             _tokenHelper = tokenHelper;
-            _mailService = mailService;
         }
         public IDataResult<AccessToken> CreateAccessToken(User user)
         {
@@ -55,13 +52,12 @@ namespace Business.Concrete
         }
         [ExceptionLogAspect(typeof(DatabaseLogger))]
         [ValidationAspect(typeof(RegisterValidator))]
-        [SuccessMailAspect(typeof(VerificationMailType))]
-        public IResult Register(UserForRegisterDto userForRegisterDto)
+        public IDataResult<User> Register(UserForRegisterDto userForRegisterDto)
         {
             var check = this.UserExists(userForRegisterDto.UserName);
             if (check.Success)
             {
-                return new ErrorResult("Bu kullanıcı adı sistemde var!");
+                return new ErrorDataResult<User>("Bu kullanıcı adı sistemde var!");
             }
             byte[] passwordHash,passwordSalt;
             HashingHelper.CreatePasswordHash(userForRegisterDto.Password,out passwordHash,out passwordSalt);
@@ -74,8 +70,7 @@ namespace Business.Concrete
                 PasswordSalt = passwordSalt,
             };
             _userService.Add(user);
-            //_mailService.Send(userForRegisterDto.Email, "Yeni Üyelik", MailContent.Replace("{name}",userForRegisterDto.FullName).Replace("{code}","1234").Replace("{id}",user.Id.ToString()) );
-            return new SuccessResult("Kayıt işlemi başarılı.");
+            return new SuccessDataResult<User>(user,"Kayıt işlemi başarılı.");
 
         }
 
@@ -92,9 +87,13 @@ namespace Business.Concrete
             return new SuccessResult();
         }
 
-        public IResult UserVerification(UserForVerificationDto userForVerificationDto)
+        public IDataResult<User> UserVerification(UserForVerificationDto userForVerificationDto)
         {
-            throw new NotImplementedException();
+            var disableUserExists=this._userService.Get(u => u.Id == userForVerificationDto.UserId && u.Status == false);
+            if (disableUserExists.Data == null) {
+                return new ErrorDataResult<User>("Pasif kullanıcı bulunamadı");
+            }
+            return disableUserExists;
         }
     }
 }

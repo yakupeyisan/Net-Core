@@ -11,8 +11,6 @@ namespace Business.Abstract
         public IDataResult<List<MailTransaction>> GetAll(Expression<Func<MailTransaction, bool>> filter = null);
         public IDataResult<MailTransaction> Get(Expression<Func<MailTransaction, bool>> filter);
         public IResult Add(MailTransaction mailTransaction);
-        public IResult Update(MailTransaction mailTransaction);
-        public IResult Delete(MailTransaction mailTransaction);
 
     }
 }

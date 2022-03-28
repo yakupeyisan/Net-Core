@@ -1,4 +1,5 @@
 ﻿using Business.Abstract;
+using Core.Abstract;
 using Core.Utilities.Results;
 using DataAccess.Abstract;
 using Entities.Concrete;
@@ -14,10 +15,11 @@ namespace Business.Concrete
     public class MailTransactionManager : IMailTransactionService
     {
         private IMailTransactionRepository _mailTransactionRepository;
-
-        public MailTransactionManager(IMailTransactionRepository mailTransactionRepository)
+        private IMailService _mailService;
+        public MailTransactionManager(IMailTransactionRepository mailTransactionRepository,IMailService mailService)
         {
             _mailTransactionRepository = mailTransactionRepository;
+            _mailService = mailService;
         }
 
 
@@ -36,18 +38,10 @@ namespace Business.Concrete
         public IResult Add(MailTransaction mailTransaction)
         {
             _mailTransactionRepository.Add(mailTransaction);
-            return new SuccessResult("Mail işlemi eklendi.");
-        }
-
-        public IResult Update(MailTransaction mailTransaction)
-        {
+            _mailService.Send(mailTransaction.MailAddress,mailTransaction.Subject,mailTransaction.Content);
+            mailTransaction.Status=true;
             _mailTransactionRepository.Update(mailTransaction);
-            return new SuccessResult("Mail işlemi güncellendi.");
-        }
-        public IResult Delete(MailTransaction mailTransaction)
-        {
-            _mailTransactionRepository.Delete(mailTransaction);
-            return new SuccessResult("Mail işlemi silindi.");
+            return new SuccessResult("Mail işlemi eklendi ve gönderildi.");
         }
     }
 }

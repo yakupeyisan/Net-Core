@@ -1,4 +1,5 @@
-﻿using Core.Utilities.Results;
+﻿using Core.Entities.Concrete;
+using Core.Utilities.Results;
 using Entities.Concrete;
 using System;
 using System.Collections.Generic;
@@ -11,6 +12,7 @@ namespace Business.Abstract
         public IDataResult<List<VerificationCode>> GetAll(Expression<Func<VerificationCode,bool>> filter = null);
         public IDataResult<VerificationCode> Get(Expression<Func<VerificationCode,bool>> filter);
         public IResult Add(VerificationCode verificationCode);
+        public IResult AddAndSendMail(VerificationCode verificationCode, User user, string email);
         public IResult Update(VerificationCode verificationCode);
         public IResult Delete(VerificationCode verificationCode);
     }

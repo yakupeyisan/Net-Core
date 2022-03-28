@@ -13,10 +13,10 @@ namespace Business.Abstract
     public interface IAuthService
     {
         public IDataResult<User> Login(UserForLoginDto userForLoginDto);
-        public IResult Register(UserForRegisterDto userForRegisterDto);
+        public IDataResult<User> Register(UserForRegisterDto userForRegisterDto);
         public IResult UserExists(string userName);
         public IResult ResetPassword(string userName);
-        public IResult UserVerification(UserForVerificationDto userForVerificationDto);
+        public IDataResult<User> UserVerification(UserForVerificationDto userForVerificationDto);
         public IDataResult<AccessToken> CreateAccessToken(User user);
     }
 }
