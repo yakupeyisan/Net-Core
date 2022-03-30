@@ -39,20 +39,26 @@ namespace Business.Concrete
             _verificationCodeRepository.Add(verificationCode);
             return new SuccessResult("Doğrulama kodu eklendi.");
         }
-        public IResult AddAndSendMail(VerificationCode verificationCode, User user, string email)
+        public IResult AddAndSendMail(VerificationCode verificationCode, User user,string mailType,string subject)
         {
+            this.GetAll(v => v.ExpirationDate > DateTime.Now && v.UserId == user.Id)
+                .Data.ForEach(v => {
+                    v.ExpirationDate = DateTime.Now;
+                    _verificationCodeRepository.Update(v);
+                });
             _verificationCodeRepository.Add(verificationCode);
 
-            var content = FileOperation.ReadHtmlTemplate("new-account-email");
+            var content = FileOperation.ReadHtmlTemplate(mailType);
             content = content.Replace("{FullName}", user.FullName);
             content = content.Replace("{Id}", user.Id.ToString());
             content = content.Replace("{code}", verificationCode.Code);
-            content = content.Replace("\\r\\n", "");
+            content = content.Replace("\\r", "");
+            content = content.Replace("\\n", "");
             var mailTransaction = new MailTransaction()
             {
                 UserId = user.Id,
-                MailAddress = email,
-                Subject = "Yeni Üyelik",
+                MailAddress = user.Account.Email,
+                Subject = subject,
                 Content = content,
                 SendDate = DateTime.Now,
                 Status = false

@@ -1,24 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\OrioN\\Documents\\GitHub\\Net-Core\\SimpleEnterpriseArchitecture .Net 5.0\\DataAccess\\DataAccess.csproj": {}
+    "C:\\Users\\303MERTKAN_AKSAM\\Desktop\\Net-Core-main\\SimpleEnterpriseArchitecture .Net 5.0\\DataAccess\\DataAccess.csproj": {}
   },
   "projects": {
-    "C:\\Users\\OrioN\\Documents\\GitHub\\Net-Core\\SimpleEnterpriseArchitecture .Net 5.0\\Core\\Core.csproj": {
+    "C:\\Users\\303MERTKAN_AKSAM\\Desktop\\Net-Core-main\\SimpleEnterpriseArchitecture .Net 5.0\\Core\\Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\OrioN\\Documents\\GitHub\\Net-Core\\SimpleEnterpriseArchitecture .Net 5.0\\Core\\Core.csproj",
+        "projectUniqueName": "C:\\Users\\303MERTKAN_AKSAM\\Desktop\\Net-Core-main\\SimpleEnterpriseArchitecture .Net 5.0\\Core\\Core.csproj",
         "projectName": "Core",
-        "projectPath": "C:\\Users\\OrioN\\Documents\\GitHub\\Net-Core\\SimpleEnterpriseArchitecture .Net 5.0\\Core\\Core.csproj",
-        "packagesPath": "C:\\Users\\OrioN\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\OrioN\\Documents\\GitHub\\Net-Core\\SimpleEnterpriseArchitecture .Net 5.0\\Core\\obj\\",
+        "projectPath": "C:\\Users\\303MERTKAN_AKSAM\\Desktop\\Net-Core-main\\SimpleEnterpriseArchitecture .Net 5.0\\Core\\Core.csproj",
+        "packagesPath": "C:\\Users\\303MERTKAN_AKSAM\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\303MERTKAN_AKSAM\\Desktop\\Net-Core-main\\SimpleEnterpriseArchitecture .Net 5.0\\Core\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\OrioN\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\303MERTKAN_AKSAM\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -32,8 +28,8 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "C:\\Users\\OrioN\\Documents\\GitHub\\Net-Core\\SimpleEnterpriseArchitecture .Net 5.0\\Integrations\\Integrations.csproj": {
-                "projectPath": "C:\\Users\\OrioN\\Documents\\GitHub\\Net-Core\\SimpleEnterpriseArchitecture .Net 5.0\\Integrations\\Integrations.csproj"
+              "C:\\Users\\303MERTKAN_AKSAM\\Desktop\\Net-Core-main\\SimpleEnterpriseArchitecture .Net 5.0\\Integrations\\Integrations.csproj": {
+                "projectPath": "C:\\Users\\303MERTKAN_AKSAM\\Desktop\\Net-Core-main\\SimpleEnterpriseArchitecture .Net 5.0\\Integrations\\Integrations.csproj"
               }
             }
           }
@@ -112,25 +108,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.200\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.404\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\OrioN\\Documents\\GitHub\\Net-Core\\SimpleEnterpriseArchitecture .Net 5.0\\DataAccess\\DataAccess.csproj": {
+    "C:\\Users\\303MERTKAN_AKSAM\\Desktop\\Net-Core-main\\SimpleEnterpriseArchitecture .Net 5.0\\DataAccess\\DataAccess.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\OrioN\\Documents\\GitHub\\Net-Core\\SimpleEnterpriseArchitecture .Net 5.0\\DataAccess\\DataAccess.csproj",
+        "projectUniqueName": "C:\\Users\\303MERTKAN_AKSAM\\Desktop\\Net-Core-main\\SimpleEnterpriseArchitecture .Net 5.0\\DataAccess\\DataAccess.csproj",
         "projectName": "DataAccess",
-        "projectPath": "C:\\Users\\OrioN\\Documents\\GitHub\\Net-Core\\SimpleEnterpriseArchitecture .Net 5.0\\DataAccess\\DataAccess.csproj",
-        "packagesPath": "C:\\Users\\OrioN\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\OrioN\\Documents\\GitHub\\Net-Core\\SimpleEnterpriseArchitecture .Net 5.0\\DataAccess\\obj\\",
+        "projectPath": "C:\\Users\\303MERTKAN_AKSAM\\Desktop\\Net-Core-main\\SimpleEnterpriseArchitecture .Net 5.0\\DataAccess\\DataAccess.csproj",
+        "packagesPath": "C:\\Users\\303MERTKAN_AKSAM\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\303MERTKAN_AKSAM\\Desktop\\Net-Core-main\\SimpleEnterpriseArchitecture .Net 5.0\\DataAccess\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\OrioN\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\303MERTKAN_AKSAM\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -144,11 +136,11 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "C:\\Users\\OrioN\\Documents\\GitHub\\Net-Core\\SimpleEnterpriseArchitecture .Net 5.0\\Core\\Core.csproj": {
-                "projectPath": "C:\\Users\\OrioN\\Documents\\GitHub\\Net-Core\\SimpleEnterpriseArchitecture .Net 5.0\\Core\\Core.csproj"
+              "C:\\Users\\303MERTKAN_AKSAM\\Desktop\\Net-Core-main\\SimpleEnterpriseArchitecture .Net 5.0\\Core\\Core.csproj": {
+                "projectPath": "C:\\Users\\303MERTKAN_AKSAM\\Desktop\\Net-Core-main\\SimpleEnterpriseArchitecture .Net 5.0\\Core\\Core.csproj"
               },
-              "C:\\Users\\OrioN\\Documents\\GitHub\\Net-Core\\SimpleEnterpriseArchitecture .Net 5.0\\Entities\\Entities.csproj": {
-                "projectPath": "C:\\Users\\OrioN\\Documents\\GitHub\\Net-Core\\SimpleEnterpriseArchitecture .Net 5.0\\Entities\\Entities.csproj"
+              "C:\\Users\\303MERTKAN_AKSAM\\Desktop\\Net-Core-main\\SimpleEnterpriseArchitecture .Net 5.0\\Entities\\Entities.csproj": {
+                "projectPath": "C:\\Users\\303MERTKAN_AKSAM\\Desktop\\Net-Core-main\\SimpleEnterpriseArchitecture .Net 5.0\\Entities\\Entities.csproj"
               }
             }
           }
@@ -199,25 +191,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.200\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.404\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\OrioN\\Documents\\GitHub\\Net-Core\\SimpleEnterpriseArchitecture .Net 5.0\\Entities\\Entities.csproj": {
+    "C:\\Users\\303MERTKAN_AKSAM\\Desktop\\Net-Core-main\\SimpleEnterpriseArchitecture .Net 5.0\\Entities\\Entities.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\OrioN\\Documents\\GitHub\\Net-Core\\SimpleEnterpriseArchitecture .Net 5.0\\Entities\\Entities.csproj",
+        "projectUniqueName": "C:\\Users\\303MERTKAN_AKSAM\\Desktop\\Net-Core-main\\SimpleEnterpriseArchitecture .Net 5.0\\Entities\\Entities.csproj",
         "projectName": "Entities",
-        "projectPath": "C:\\Users\\OrioN\\Documents\\GitHub\\Net-Core\\SimpleEnterpriseArchitecture .Net 5.0\\Entities\\Entities.csproj",
-        "packagesPath": "C:\\Users\\OrioN\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\OrioN\\Documents\\GitHub\\Net-Core\\SimpleEnterpriseArchitecture .Net 5.0\\Entities\\obj\\",
+        "projectPath": "C:\\Users\\303MERTKAN_AKSAM\\Desktop\\Net-Core-main\\SimpleEnterpriseArchitecture .Net 5.0\\Entities\\Entities.csproj",
+        "packagesPath": "C:\\Users\\303MERTKAN_AKSAM\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\303MERTKAN_AKSAM\\Desktop\\Net-Core-main\\SimpleEnterpriseArchitecture .Net 5.0\\Entities\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\OrioN\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\303MERTKAN_AKSAM\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -231,8 +219,8 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "C:\\Users\\OrioN\\Documents\\GitHub\\Net-Core\\SimpleEnterpriseArchitecture .Net 5.0\\Core\\Core.csproj": {
-                "projectPath": "C:\\Users\\OrioN\\Documents\\GitHub\\Net-Core\\SimpleEnterpriseArchitecture .Net 5.0\\Core\\Core.csproj"
+              "C:\\Users\\303MERTKAN_AKSAM\\Desktop\\Net-Core-main\\SimpleEnterpriseArchitecture .Net 5.0\\Core\\Core.csproj": {
+                "projectPath": "C:\\Users\\303MERTKAN_AKSAM\\Desktop\\Net-Core-main\\SimpleEnterpriseArchitecture .Net 5.0\\Core\\Core.csproj"
               }
             }
           }
@@ -261,25 +249,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.200\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.404\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\OrioN\\Documents\\GitHub\\Net-Core\\SimpleEnterpriseArchitecture .Net 5.0\\Integrations\\Integrations.csproj": {
+    "C:\\Users\\303MERTKAN_AKSAM\\Desktop\\Net-Core-main\\SimpleEnterpriseArchitecture .Net 5.0\\Integrations\\Integrations.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\OrioN\\Documents\\GitHub\\Net-Core\\SimpleEnterpriseArchitecture .Net 5.0\\Integrations\\Integrations.csproj",
+        "projectUniqueName": "C:\\Users\\303MERTKAN_AKSAM\\Desktop\\Net-Core-main\\SimpleEnterpriseArchitecture .Net 5.0\\Integrations\\Integrations.csproj",
         "projectName": "Integrations",
-        "projectPath": "C:\\Users\\OrioN\\Documents\\GitHub\\Net-Core\\SimpleEnterpriseArchitecture .Net 5.0\\Integrations\\Integrations.csproj",
-        "packagesPath": "C:\\Users\\OrioN\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\OrioN\\Documents\\GitHub\\Net-Core\\SimpleEnterpriseArchitecture .Net 5.0\\Integrations\\obj\\",
+        "projectPath": "C:\\Users\\303MERTKAN_AKSAM\\Desktop\\Net-Core-main\\SimpleEnterpriseArchitecture .Net 5.0\\Integrations\\Integrations.csproj",
+        "packagesPath": "C:\\Users\\303MERTKAN_AKSAM\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\303MERTKAN_AKSAM\\Desktop\\Net-Core-main\\SimpleEnterpriseArchitecture .Net 5.0\\Integrations\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\OrioN\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\303MERTKAN_AKSAM\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -319,7 +303,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.200\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.404\\RuntimeIdentifierGraph.json"
         }
       }
     }

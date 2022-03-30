@@ -15,7 +15,7 @@ namespace Business.Abstract
         public IDataResult<User> Login(UserForLoginDto userForLoginDto);
         public IDataResult<User> Register(UserForRegisterDto userForRegisterDto);
         public IResult UserExists(string userName);
-        public IResult ResetPassword(string userName);
+        public IResult ResetPassword(UserForResetPasswordDto resetPasswordDto, int userId);
         public IDataResult<User> UserVerification(UserForVerificationDto userForVerificationDto);
         public IDataResult<AccessToken> CreateAccessToken(User user);
     }

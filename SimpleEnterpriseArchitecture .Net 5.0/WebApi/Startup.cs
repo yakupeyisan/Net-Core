@@ -51,6 +51,7 @@ namespace WebApi
                         ValidateIssuer = true,
                         ValidateAudience = true,
                         ValidateLifetime = true,
+                        ClockSkew=TimeSpan.Zero,
                         ValidIssuer = tokenOptions.Issuer,
                         ValidAudience = tokenOptions.Audience,
                         ValidateIssuerSigningKey = true,
@@ -75,7 +76,8 @@ namespace WebApi
             app.ConfigureCustomExceptionMiddleware();
             app.UseCors(
                 builder=>
-                builder.WithOrigins("*").AllowAnyHeader()
+                builder.AllowAnyOrigin()
+                .AllowAnyHeader()
             );
             app.UseHttpsRedirection();
             app.UseRouting();

@@ -27,6 +27,7 @@ namespace Business.DependencyResolvers.Autofac
             builder.RegisterType<MailTransactionRepository>().As<IMailTransactionRepository>();
             builder.RegisterType<VerificationCodeManager>().As<IVerificationCodeService>();
             builder.RegisterType<VerificationCodeRepository>().As<IVerificationCodeRepository>();
+            builder.RegisterType<AccountRepository>().As<IAccountRepository>();
 
             var assembly = System.Reflection.Assembly.GetExecutingAssembly();
             builder.RegisterAssemblyTypes(assembly)

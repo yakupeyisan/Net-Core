@@ -5,6 +5,11 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Content Remove="wwwroot\reset-password-email.html" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\reset-password-email.html" />
     <None Include="wwwroot\new-account-email.html" />
   </ItemGroup>
 

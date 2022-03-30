@@ -8,9 +8,10 @@ namespace Core.Utilities.Tools
 {
     public static class RandomCodeGenerator
     {
-        public static string Generate(int length=8)
+        public static string Generate(int length=8,bool alphanumeric =true)
         {
-            string words = "ABCDEFGHIJKLMNOPRSTUVYZabcdefghijklmnoprstuvyz0123456789";
+            string words = (alphanumeric)?"ABCDEFGHIJKLMNOPRSTUVYZabcdefghijklmnoprstuvyz0123456789"
+                :"0123456789";
             Random random;
             string result = "";
             for(int i=0;i<length;i++)
