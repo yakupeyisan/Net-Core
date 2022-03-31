@@ -26,5 +26,9 @@ namespace Core.Extensions
         {
             roles.ToList().ForEach(role => claims.Add(new Claim(ClaimTypes.Role, role)));
         }
+        public static Claim GetNameIdentifier(this IEnumerable<Claim> claims)
+        {
+            return claims.Where(c => c.Type.Contains("nameidentifier")).SingleOrDefault();
+        }
     }
 }

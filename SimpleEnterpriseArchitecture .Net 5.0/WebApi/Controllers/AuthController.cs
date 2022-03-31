@@ -1,5 +1,6 @@
 ﻿using Business.Abstract;
 using Core.Abstract;
+using Core.Extensions;
 using Core.Utilities.FileOperations;
 using Core.Utilities.Results;
 using Core.Utilities.Tools;
@@ -11,6 +12,7 @@ using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.Claims;
 using System.Threading.Tasks;
 
 namespace WebApi.Controllers

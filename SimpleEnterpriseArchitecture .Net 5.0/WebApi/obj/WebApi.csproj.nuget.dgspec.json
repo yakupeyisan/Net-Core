@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\303MERTKAN_AKSAM\\Desktop\\Net-Core-main\\SimpleEnterpriseArchitecture .Net 5.0\\WebApi\\WebApi.csproj": {}
+    "C:\\Users\\303MERTKAN_AKSAM\\Documents\\GitHub\\Net-Core\\SimpleEnterpriseArchitecture .Net 5.0\\WebApi\\WebApi.csproj": {}
   },
   "projects": {
-    "C:\\Users\\303MERTKAN_AKSAM\\Desktop\\Net-Core-main\\SimpleEnterpriseArchitecture .Net 5.0\\Business\\Business.csproj": {
+    "C:\\Users\\303MERTKAN_AKSAM\\Documents\\GitHub\\Net-Core\\SimpleEnterpriseArchitecture .Net 5.0\\Business\\Business.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\303MERTKAN_AKSAM\\Desktop\\Net-Core-main\\SimpleEnterpriseArchitecture .Net 5.0\\Business\\Business.csproj",
+        "projectUniqueName": "C:\\Users\\303MERTKAN_AKSAM\\Documents\\GitHub\\Net-Core\\SimpleEnterpriseArchitecture .Net 5.0\\Business\\Business.csproj",
         "projectName": "Business",
-        "projectPath": "C:\\Users\\303MERTKAN_AKSAM\\Desktop\\Net-Core-main\\SimpleEnterpriseArchitecture .Net 5.0\\Business\\Business.csproj",
+        "projectPath": "C:\\Users\\303MERTKAN_AKSAM\\Documents\\GitHub\\Net-Core\\SimpleEnterpriseArchitecture .Net 5.0\\Business\\Business.csproj",
         "packagesPath": "C:\\Users\\303MERTKAN_AKSAM\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\303MERTKAN_AKSAM\\Desktop\\Net-Core-main\\SimpleEnterpriseArchitecture .Net 5.0\\Business\\obj\\",
+        "outputPath": "C:\\Users\\303MERTKAN_AKSAM\\Documents\\GitHub\\Net-Core\\SimpleEnterpriseArchitecture .Net 5.0\\Business\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\303MERTKAN_AKSAM\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -28,11 +28,11 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "C:\\Users\\303MERTKAN_AKSAM\\Desktop\\Net-Core-main\\SimpleEnterpriseArchitecture .Net 5.0\\DataAccess\\DataAccess.csproj": {
-                "projectPath": "C:\\Users\\303MERTKAN_AKSAM\\Desktop\\Net-Core-main\\SimpleEnterpriseArchitecture .Net 5.0\\DataAccess\\DataAccess.csproj"
+              "C:\\Users\\303MERTKAN_AKSAM\\Documents\\GitHub\\Net-Core\\SimpleEnterpriseArchitecture .Net 5.0\\DataAccess\\DataAccess.csproj": {
+                "projectPath": "C:\\Users\\303MERTKAN_AKSAM\\Documents\\GitHub\\Net-Core\\SimpleEnterpriseArchitecture .Net 5.0\\DataAccess\\DataAccess.csproj"
               },
-              "C:\\Users\\303MERTKAN_AKSAM\\Desktop\\Net-Core-main\\SimpleEnterpriseArchitecture .Net 5.0\\Entities\\Entities.csproj": {
-                "projectPath": "C:\\Users\\303MERTKAN_AKSAM\\Desktop\\Net-Core-main\\SimpleEnterpriseArchitecture .Net 5.0\\Entities\\Entities.csproj"
+              "C:\\Users\\303MERTKAN_AKSAM\\Documents\\GitHub\\Net-Core\\SimpleEnterpriseArchitecture .Net 5.0\\Entities\\Entities.csproj": {
+                "projectPath": "C:\\Users\\303MERTKAN_AKSAM\\Documents\\GitHub\\Net-Core\\SimpleEnterpriseArchitecture .Net 5.0\\Entities\\Entities.csproj"
               }
             }
           }
@@ -79,14 +79,14 @@
         }
       }
     },
-    "C:\\Users\\303MERTKAN_AKSAM\\Desktop\\Net-Core-main\\SimpleEnterpriseArchitecture .Net 5.0\\Core\\Core.csproj": {
+    "C:\\Users\\303MERTKAN_AKSAM\\Documents\\GitHub\\Net-Core\\SimpleEnterpriseArchitecture .Net 5.0\\Core\\Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\303MERTKAN_AKSAM\\Desktop\\Net-Core-main\\SimpleEnterpriseArchitecture .Net 5.0\\Core\\Core.csproj",
+        "projectUniqueName": "C:\\Users\\303MERTKAN_AKSAM\\Documents\\GitHub\\Net-Core\\SimpleEnterpriseArchitecture .Net 5.0\\Core\\Core.csproj",
         "projectName": "Core",
-        "projectPath": "C:\\Users\\303MERTKAN_AKSAM\\Desktop\\Net-Core-main\\SimpleEnterpriseArchitecture .Net 5.0\\Core\\Core.csproj",
+        "projectPath": "C:\\Users\\303MERTKAN_AKSAM\\Documents\\GitHub\\Net-Core\\SimpleEnterpriseArchitecture .Net 5.0\\Core\\Core.csproj",
         "packagesPath": "C:\\Users\\303MERTKAN_AKSAM\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\303MERTKAN_AKSAM\\Desktop\\Net-Core-main\\SimpleEnterpriseArchitecture .Net 5.0\\Core\\obj\\",
+        "outputPath": "C:\\Users\\303MERTKAN_AKSAM\\Documents\\GitHub\\Net-Core\\SimpleEnterpriseArchitecture .Net 5.0\\Core\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\303MERTKAN_AKSAM\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -103,8 +103,8 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "C:\\Users\\303MERTKAN_AKSAM\\Desktop\\Net-Core-main\\SimpleEnterpriseArchitecture .Net 5.0\\Integrations\\Integrations.csproj": {
-                "projectPath": "C:\\Users\\303MERTKAN_AKSAM\\Desktop\\Net-Core-main\\SimpleEnterpriseArchitecture .Net 5.0\\Integrations\\Integrations.csproj"
+              "C:\\Users\\303MERTKAN_AKSAM\\Documents\\GitHub\\Net-Core\\SimpleEnterpriseArchitecture .Net 5.0\\Integrations\\Integrations.csproj": {
+                "projectPath": "C:\\Users\\303MERTKAN_AKSAM\\Documents\\GitHub\\Net-Core\\SimpleEnterpriseArchitecture .Net 5.0\\Integrations\\Integrations.csproj"
               }
             }
           }
@@ -187,14 +187,14 @@
         }
       }
     },
-    "C:\\Users\\303MERTKAN_AKSAM\\Desktop\\Net-Core-main\\SimpleEnterpriseArchitecture .Net 5.0\\DataAccess\\DataAccess.csproj": {
+    "C:\\Users\\303MERTKAN_AKSAM\\Documents\\GitHub\\Net-Core\\SimpleEnterpriseArchitecture .Net 5.0\\DataAccess\\DataAccess.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\303MERTKAN_AKSAM\\Desktop\\Net-Core-main\\SimpleEnterpriseArchitecture .Net 5.0\\DataAccess\\DataAccess.csproj",
+        "projectUniqueName": "C:\\Users\\303MERTKAN_AKSAM\\Documents\\GitHub\\Net-Core\\SimpleEnterpriseArchitecture .Net 5.0\\DataAccess\\DataAccess.csproj",
         "projectName": "DataAccess",
-        "projectPath": "C:\\Users\\303MERTKAN_AKSAM\\Desktop\\Net-Core-main\\SimpleEnterpriseArchitecture .Net 5.0\\DataAccess\\DataAccess.csproj",
+        "projectPath": "C:\\Users\\303MERTKAN_AKSAM\\Documents\\GitHub\\Net-Core\\SimpleEnterpriseArchitecture .Net 5.0\\DataAccess\\DataAccess.csproj",
         "packagesPath": "C:\\Users\\303MERTKAN_AKSAM\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\303MERTKAN_AKSAM\\Desktop\\Net-Core-main\\SimpleEnterpriseArchitecture .Net 5.0\\DataAccess\\obj\\",
+        "outputPath": "C:\\Users\\303MERTKAN_AKSAM\\Documents\\GitHub\\Net-Core\\SimpleEnterpriseArchitecture .Net 5.0\\DataAccess\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\303MERTKAN_AKSAM\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -211,11 +211,11 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "C:\\Users\\303MERTKAN_AKSAM\\Desktop\\Net-Core-main\\SimpleEnterpriseArchitecture .Net 5.0\\Core\\Core.csproj": {
-                "projectPath": "C:\\Users\\303MERTKAN_AKSAM\\Desktop\\Net-Core-main\\SimpleEnterpriseArchitecture .Net 5.0\\Core\\Core.csproj"
+              "C:\\Users\\303MERTKAN_AKSAM\\Documents\\GitHub\\Net-Core\\SimpleEnterpriseArchitecture .Net 5.0\\Core\\Core.csproj": {
+                "projectPath": "C:\\Users\\303MERTKAN_AKSAM\\Documents\\GitHub\\Net-Core\\SimpleEnterpriseArchitecture .Net 5.0\\Core\\Core.csproj"
               },
-              "C:\\Users\\303MERTKAN_AKSAM\\Desktop\\Net-Core-main\\SimpleEnterpriseArchitecture .Net 5.0\\Entities\\Entities.csproj": {
-                "projectPath": "C:\\Users\\303MERTKAN_AKSAM\\Desktop\\Net-Core-main\\SimpleEnterpriseArchitecture .Net 5.0\\Entities\\Entities.csproj"
+              "C:\\Users\\303MERTKAN_AKSAM\\Documents\\GitHub\\Net-Core\\SimpleEnterpriseArchitecture .Net 5.0\\Entities\\Entities.csproj": {
+                "projectPath": "C:\\Users\\303MERTKAN_AKSAM\\Documents\\GitHub\\Net-Core\\SimpleEnterpriseArchitecture .Net 5.0\\Entities\\Entities.csproj"
               }
             }
           }
@@ -270,14 +270,14 @@
         }
       }
     },
-    "C:\\Users\\303MERTKAN_AKSAM\\Desktop\\Net-Core-main\\SimpleEnterpriseArchitecture .Net 5.0\\Entities\\Entities.csproj": {
+    "C:\\Users\\303MERTKAN_AKSAM\\Documents\\GitHub\\Net-Core\\SimpleEnterpriseArchitecture .Net 5.0\\Entities\\Entities.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\303MERTKAN_AKSAM\\Desktop\\Net-Core-main\\SimpleEnterpriseArchitecture .Net 5.0\\Entities\\Entities.csproj",
+        "projectUniqueName": "C:\\Users\\303MERTKAN_AKSAM\\Documents\\GitHub\\Net-Core\\SimpleEnterpriseArchitecture .Net 5.0\\Entities\\Entities.csproj",
         "projectName": "Entities",
-        "projectPath": "C:\\Users\\303MERTKAN_AKSAM\\Desktop\\Net-Core-main\\SimpleEnterpriseArchitecture .Net 5.0\\Entities\\Entities.csproj",
+        "projectPath": "C:\\Users\\303MERTKAN_AKSAM\\Documents\\GitHub\\Net-Core\\SimpleEnterpriseArchitecture .Net 5.0\\Entities\\Entities.csproj",
         "packagesPath": "C:\\Users\\303MERTKAN_AKSAM\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\303MERTKAN_AKSAM\\Desktop\\Net-Core-main\\SimpleEnterpriseArchitecture .Net 5.0\\Entities\\obj\\",
+        "outputPath": "C:\\Users\\303MERTKAN_AKSAM\\Documents\\GitHub\\Net-Core\\SimpleEnterpriseArchitecture .Net 5.0\\Entities\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\303MERTKAN_AKSAM\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -294,8 +294,8 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "C:\\Users\\303MERTKAN_AKSAM\\Desktop\\Net-Core-main\\SimpleEnterpriseArchitecture .Net 5.0\\Core\\Core.csproj": {
-                "projectPath": "C:\\Users\\303MERTKAN_AKSAM\\Desktop\\Net-Core-main\\SimpleEnterpriseArchitecture .Net 5.0\\Core\\Core.csproj"
+              "C:\\Users\\303MERTKAN_AKSAM\\Documents\\GitHub\\Net-Core\\SimpleEnterpriseArchitecture .Net 5.0\\Core\\Core.csproj": {
+                "projectPath": "C:\\Users\\303MERTKAN_AKSAM\\Documents\\GitHub\\Net-Core\\SimpleEnterpriseArchitecture .Net 5.0\\Core\\Core.csproj"
               }
             }
           }
@@ -328,14 +328,14 @@
         }
       }
     },
-    "C:\\Users\\303MERTKAN_AKSAM\\Desktop\\Net-Core-main\\SimpleEnterpriseArchitecture .Net 5.0\\Integrations\\Integrations.csproj": {
+    "C:\\Users\\303MERTKAN_AKSAM\\Documents\\GitHub\\Net-Core\\SimpleEnterpriseArchitecture .Net 5.0\\Integrations\\Integrations.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\303MERTKAN_AKSAM\\Desktop\\Net-Core-main\\SimpleEnterpriseArchitecture .Net 5.0\\Integrations\\Integrations.csproj",
+        "projectUniqueName": "C:\\Users\\303MERTKAN_AKSAM\\Documents\\GitHub\\Net-Core\\SimpleEnterpriseArchitecture .Net 5.0\\Integrations\\Integrations.csproj",
         "projectName": "Integrations",
-        "projectPath": "C:\\Users\\303MERTKAN_AKSAM\\Desktop\\Net-Core-main\\SimpleEnterpriseArchitecture .Net 5.0\\Integrations\\Integrations.csproj",
+        "projectPath": "C:\\Users\\303MERTKAN_AKSAM\\Documents\\GitHub\\Net-Core\\SimpleEnterpriseArchitecture .Net 5.0\\Integrations\\Integrations.csproj",
         "packagesPath": "C:\\Users\\303MERTKAN_AKSAM\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\303MERTKAN_AKSAM\\Desktop\\Net-Core-main\\SimpleEnterpriseArchitecture .Net 5.0\\Integrations\\obj\\",
+        "outputPath": "C:\\Users\\303MERTKAN_AKSAM\\Documents\\GitHub\\Net-Core\\SimpleEnterpriseArchitecture .Net 5.0\\Integrations\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\303MERTKAN_AKSAM\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -363,6 +363,12 @@
       "frameworks": {
         "net5.0": {
           "targetAlias": "net5.0",
+          "dependencies": {
+            "CloudinaryDotNet": {
+              "target": "Package",
+              "version": "[1.17.0, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -382,14 +388,14 @@
         }
       }
     },
-    "C:\\Users\\303MERTKAN_AKSAM\\Desktop\\Net-Core-main\\SimpleEnterpriseArchitecture .Net 5.0\\WebApi\\WebApi.csproj": {
+    "C:\\Users\\303MERTKAN_AKSAM\\Documents\\GitHub\\Net-Core\\SimpleEnterpriseArchitecture .Net 5.0\\WebApi\\WebApi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\303MERTKAN_AKSAM\\Desktop\\Net-Core-main\\SimpleEnterpriseArchitecture .Net 5.0\\WebApi\\WebApi.csproj",
+        "projectUniqueName": "C:\\Users\\303MERTKAN_AKSAM\\Documents\\GitHub\\Net-Core\\SimpleEnterpriseArchitecture .Net 5.0\\WebApi\\WebApi.csproj",
         "projectName": "WebApi",
-        "projectPath": "C:\\Users\\303MERTKAN_AKSAM\\Desktop\\Net-Core-main\\SimpleEnterpriseArchitecture .Net 5.0\\WebApi\\WebApi.csproj",
+        "projectPath": "C:\\Users\\303MERTKAN_AKSAM\\Documents\\GitHub\\Net-Core\\SimpleEnterpriseArchitecture .Net 5.0\\WebApi\\WebApi.csproj",
         "packagesPath": "C:\\Users\\303MERTKAN_AKSAM\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\303MERTKAN_AKSAM\\Desktop\\Net-Core-main\\SimpleEnterpriseArchitecture .Net 5.0\\WebApi\\obj\\",
+        "outputPath": "C:\\Users\\303MERTKAN_AKSAM\\Documents\\GitHub\\Net-Core\\SimpleEnterpriseArchitecture .Net 5.0\\WebApi\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\303MERTKAN_AKSAM\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -406,8 +412,8 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "C:\\Users\\303MERTKAN_AKSAM\\Desktop\\Net-Core-main\\SimpleEnterpriseArchitecture .Net 5.0\\Business\\Business.csproj": {
-                "projectPath": "C:\\Users\\303MERTKAN_AKSAM\\Desktop\\Net-Core-main\\SimpleEnterpriseArchitecture .Net 5.0\\Business\\Business.csproj"
+              "C:\\Users\\303MERTKAN_AKSAM\\Documents\\GitHub\\Net-Core\\SimpleEnterpriseArchitecture .Net 5.0\\Business\\Business.csproj": {
+                "projectPath": "C:\\Users\\303MERTKAN_AKSAM\\Documents\\GitHub\\Net-Core\\SimpleEnterpriseArchitecture .Net 5.0\\Business\\Business.csproj"
               }
             }
           }

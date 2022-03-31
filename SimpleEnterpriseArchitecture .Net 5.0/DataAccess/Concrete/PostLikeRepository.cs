@@ -5,7 +5,7 @@ using Entities.Concrete;
 
 namespace DataAccess.Concrete
 {
-    public class PostLikeRepository : EfBaseRepository<PostLike, InstagramDbContext>, IPostLikeRepository
+    public class PostLikeRepository : EfBaseRepository<PostSave, InstagramDbContext>, IPostLikeRepository
     {
     }
 }

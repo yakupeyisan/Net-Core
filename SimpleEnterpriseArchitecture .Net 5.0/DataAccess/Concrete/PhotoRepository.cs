@@ -5,7 +5,7 @@ using Entities.Concrete;
 
 namespace DataAccess.Concrete
 {
-    public class AccountAvatarRepository : EfBaseRepository<AccountAvatar, InstagramDbContext>, IAccountAvatarRepository
+    public class PhotoRepository : EfBaseRepository<Photo, InstagramDbContext>, IPhotoRepository
     {
     }
 }

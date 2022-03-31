@@ -28,6 +28,8 @@ namespace Business.DependencyResolvers.Autofac
             builder.RegisterType<VerificationCodeManager>().As<IVerificationCodeService>();
             builder.RegisterType<VerificationCodeRepository>().As<IVerificationCodeRepository>();
             builder.RegisterType<AccountRepository>().As<IAccountRepository>();
+            builder.RegisterType<PostInformationManager>().As<IPostInformationService>();
+            builder.RegisterType<PostInformationRepository>().As<IPostInformationRepository>();
 
             var assembly = System.Reflection.Assembly.GetExecutingAssembly();
             builder.RegisterAssemblyTypes(assembly)

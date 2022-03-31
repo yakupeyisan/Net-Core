@@ -3,7 +3,7 @@ using Entities.Concrete;
 
 namespace DataAccess.Abstract
 {
-    public interface IAccountAvatarRepository : IBaseRepository<AccountAvatar>
+    public interface IPhotoRepository : IBaseRepository<Photo>
     {
     }
 }
