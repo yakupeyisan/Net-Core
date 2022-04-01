@@ -22,18 +22,18 @@ namespace Business.Concrete
             _userRepository = userRepository;
         }
 
-        public IDataResult<List<User>> GetAll(Expression<Func<User,bool>> filter = null)
+        public IDataResult<List<User>> GetAll(Expression<Func<User, bool>> filter = null)
         {
-            return new SuccessDataResult<List<User>>(this._userRepository.GetAll(filter),"Kullanıcılar listelendi");
+            return new SuccessDataResult<List<User>>(this._userRepository.GetAll(filter), "Kullanıcılar listelendi");
         }
         public IDataResult<User> Get(Expression<Func<User, bool>> filter)
         {
             return new SuccessDataResult<User>(this._userRepository.Get(filter), "Kullanıcı getirildi");
         }
-        [ValidationAspect(typeof(UserValidator),Priority =1)]
+        [ValidationAspect(typeof(UserValidator), Priority = 1)]
         public IResult Add(User user)
         {
-           this._userRepository.Add(user);
+            this._userRepository.Add(user);
             return new SuccessResult("Kişi eklendi");
         }
 

@@ -8,6 +8,7 @@ using System.Collections.Generic;
 using System.Linq.Expressions;
 using System.Linq;
 using Core.Entities.Concrete;
+using Microsoft.EntityFrameworkCore;
 
 namespace DataAccess.Concrete
 {
@@ -87,6 +88,34 @@ namespace DataAccess.Concrete
                                  IsSaved = context.PostSaves.Where(s => s.PostId == post.Id && s.UserId == userId).ToList().Count > 0,
                              };
                 return result.Where(filter).SingleOrDefault();
+            }
+        }
+
+        public override bool Add(PostInformation entity)
+        {
+            using (var context= new InstagramDbContext())
+            {
+                var addedPost=context.Entry(entity);
+                addedPost.State = EntityState.Added;
+                context.SaveChanges();
+                if (entity.Photos != null)
+                {
+                    entity.Photos.ForEach(p =>
+                    {
+                        var addedPhoto=context.Entry(p);
+                        addedPhoto.State = EntityState.Added;
+                        context.SaveChanges();
+                        var postPhoto = new PostPhoto()
+                        {
+                            PhotoId = p.Id,
+                            PostId = entity.Id
+                        };
+                        var addedRelation = context.Entry(postPhoto);
+                        addedRelation.State = EntityState.Added;
+                        context.SaveChanges();
+                    });
+                }
+                return true;
             }
         }
     }

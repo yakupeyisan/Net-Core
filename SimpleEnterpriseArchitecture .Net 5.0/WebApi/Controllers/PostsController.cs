@@ -1,6 +1,7 @@
 ﻿using Business.Abstract;
 using Core.Extensions;
 using Entities.Concrete;
+using Entities.Dtos;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
@@ -38,7 +39,7 @@ namespace WebApi.Controllers
         {
             var claimsIdentity = (this.User.Identity as ClaimsIdentity).Claims.GetNameIdentifier();
             postSave.UserId = int.Parse(claimsIdentity.Value);
-            return Ok(this._postService.SavePost(postSave));
+            return Ok(this._postService.UnSavePost(postSave));
         }
         [HttpPost("like")]
         public IActionResult Like(PostLike postLike)
@@ -53,6 +54,13 @@ namespace WebApi.Controllers
             var claimsIdentity = (this.User.Identity as ClaimsIdentity).Claims.GetNameIdentifier();
             postLike.UserId = int.Parse(claimsIdentity.Value);
             return Ok(this._postService.UnLikePost(postLike));
+        }
+        [HttpPost("add")]
+        public IActionResult Add(PostAddDto postAdd)
+        {
+            var claimsIdentity = (this.User.Identity as ClaimsIdentity).Claims.GetNameIdentifier();
+            postAdd.UserId = int.Parse(claimsIdentity.Value);
+            return Ok(_postService.Add(postAdd));
         }
     }
 }

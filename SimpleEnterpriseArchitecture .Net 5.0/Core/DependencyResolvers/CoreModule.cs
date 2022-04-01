@@ -22,6 +22,7 @@ namespace Core.DependencyResolvers
             services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
             services.AddSingleton<ICacheManager, MemoryCacheManager>();
             services.AddSingleton<IMailService, MailAdapter>();
+            services.AddSingleton<ICloudinaryService, CloudinaryAdapter>();
             services.AddSingleton<Stopwatch>();
         }
     }

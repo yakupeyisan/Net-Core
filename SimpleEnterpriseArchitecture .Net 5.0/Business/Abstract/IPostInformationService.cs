@@ -18,5 +18,6 @@ namespace Business.Abstract
         IResult UnLikePost(PostLike postLike);
         IResult SavePost(PostSave postSave);
         IResult UnSavePost(PostSave postSave);
+        IResult Add(PostAddDto postAdd);
     }
 }

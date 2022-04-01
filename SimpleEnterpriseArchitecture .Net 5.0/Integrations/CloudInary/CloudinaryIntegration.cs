@@ -14,7 +14,7 @@ namespace Integrations.CloudInary
 
         public CloudinaryIntegration(string cloud, string apiKey, string apiSecret)
         {
-            Account account = new Account();
+            Account account = new Account(cloud,apiKey,apiSecret);
             _cloudinary = new Cloudinary(account);
         }
         public string UploadImage(string filePath)

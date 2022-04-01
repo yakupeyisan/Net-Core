@@ -33,6 +33,10 @@ namespace Business.DependencyResolvers.Autofac
             builder.RegisterType<PostLikeRepository>().As<IPostLikeRepository>();
             builder.RegisterType<PostCommentRepository>().As<IPostCommentRepository>();
             builder.RegisterType<PostSaveRepository>().As<IPostSaveRepository>();
+            builder.RegisterType<PostLikeManager>().As<IPostLikeService>();
+            builder.RegisterType<PostSaveManager>().As<IPostSaveService>();
+            builder.RegisterType<PhotoRepository>().As<IPhotoRepository>();
+            builder.RegisterType<PhotoManager>().As<IPhotoService>();
 
             var assembly = System.Reflection.Assembly.GetExecutingAssembly();
             builder.RegisterAssemblyTypes(assembly)
