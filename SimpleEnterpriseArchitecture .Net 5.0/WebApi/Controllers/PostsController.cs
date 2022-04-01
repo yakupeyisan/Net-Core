@@ -1,5 +1,6 @@
 ﻿using Business.Abstract;
 using Core.Extensions;
+using Entities.Concrete;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
@@ -24,6 +25,34 @@ namespace WebApi.Controllers
         {
             var claimsIdentity = (this.User.Identity as ClaimsIdentity).Claims.GetNameIdentifier();
             return Ok(this._postService.GetAllViewPostInformations(int.Parse(claimsIdentity.Value)));
+        }
+        [HttpPost("save")]
+        public IActionResult Save(PostSave postSave)
+        {
+            var claimsIdentity = (this.User.Identity as ClaimsIdentity).Claims.GetNameIdentifier();
+            postSave.UserId = int.Parse(claimsIdentity.Value);
+            return Ok(this._postService.SavePost(postSave));
+        }
+        [HttpPost("un-save")]
+        public IActionResult UnSave(PostSave postSave)
+        {
+            var claimsIdentity = (this.User.Identity as ClaimsIdentity).Claims.GetNameIdentifier();
+            postSave.UserId = int.Parse(claimsIdentity.Value);
+            return Ok(this._postService.SavePost(postSave));
+        }
+        [HttpPost("like")]
+        public IActionResult Like(PostLike postLike)
+        {
+            var claimsIdentity = (this.User.Identity as ClaimsIdentity).Claims.GetNameIdentifier();
+            postLike.UserId = int.Parse(claimsIdentity.Value);
+            return Ok(this._postService.LikePost(postLike));
+        }
+        [HttpPost("un-like")]
+        public IActionResult UnLike(PostLike postLike)
+        {
+            var claimsIdentity = (this.User.Identity as ClaimsIdentity).Claims.GetNameIdentifier();
+            postLike.UserId = int.Parse(claimsIdentity.Value);
+            return Ok(this._postService.UnLikePost(postLike));
         }
     }
 }

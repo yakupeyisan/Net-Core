@@ -29,7 +29,6 @@ namespace DataAccess.Concrete.Contexts
         public DbSet<Employee> Employees { get; set; }
         public DbSet<Account> Accounts { get; set; }
         public DbSet<Photo> Photos { get; set; }
-        public DbSet<UserPhoto> UserPhotos { get; set; }
         public DbSet<PostPhoto> PostPhotos { get; set; }
         public DbSet<PostInformation> PostInformations { get; set; }
         public DbSet<PostTag> PostTags { get; set; }

@@ -14,7 +14,6 @@ C:\Users\OrioN\Documents\GitHub\Net-Core\SimpleEnterpriseArchitecture .Net 5.0\I
 C:\Users\OrioN\Documents\GitHub\Net-Core\SimpleEnterpriseArchitecture .Net 5.0\Integrations\bin\Debug\net5.0\Integrations.dll
 C:\Users\OrioN\Documents\GitHub\Net-Core\SimpleEnterpriseArchitecture .Net 5.0\Integrations\bin\Debug\net5.0\ref\Integrations.dll
 C:\Users\OrioN\Documents\GitHub\Net-Core\SimpleEnterpriseArchitecture .Net 5.0\Integrations\bin\Debug\net5.0\Integrations.pdb
-C:\Users\OrioN\Documents\GitHub\Net-Core\SimpleEnterpriseArchitecture .Net 5.0\Integrations\obj\Debug\net5.0\Integrations.csproj.AssemblyReference.cache
 C:\Users\OrioN\Documents\GitHub\Net-Core\SimpleEnterpriseArchitecture .Net 5.0\Integrations\obj\Debug\net5.0\Integrations.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\OrioN\Documents\GitHub\Net-Core\SimpleEnterpriseArchitecture .Net 5.0\Integrations\obj\Debug\net5.0\Integrations.AssemblyInfoInputs.cache
 C:\Users\OrioN\Documents\GitHub\Net-Core\SimpleEnterpriseArchitecture .Net 5.0\Integrations\obj\Debug\net5.0\Integrations.AssemblyInfo.cs

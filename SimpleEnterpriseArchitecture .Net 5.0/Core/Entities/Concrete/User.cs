@@ -17,6 +17,8 @@ namespace Core.Entities.Concrete
         [JsonIgnore]
         public byte[] PasswordHash { get; set; }
         public bool Status { get; set; }
+        public int PhotoId { get; set; }
         public virtual Account Account { get; set; }
+        public virtual Photo Photo { get; set; }
     }
 }

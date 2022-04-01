@@ -30,6 +30,9 @@ namespace Business.DependencyResolvers.Autofac
             builder.RegisterType<AccountRepository>().As<IAccountRepository>();
             builder.RegisterType<PostInformationManager>().As<IPostInformationService>();
             builder.RegisterType<PostInformationRepository>().As<IPostInformationRepository>();
+            builder.RegisterType<PostLikeRepository>().As<IPostLikeRepository>();
+            builder.RegisterType<PostCommentRepository>().As<IPostCommentRepository>();
+            builder.RegisterType<PostSaveRepository>().As<IPostSaveRepository>();
 
             var assembly = System.Reflection.Assembly.GetExecutingAssembly();
             builder.RegisterAssemblyTypes(assembly)
