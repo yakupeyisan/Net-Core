@@ -28,13 +28,13 @@ namespace Business.Concrete
         public IResult Add(PostSave postSave)
         {
             this._postSaveRepository.Add(postSave);
-            return new SuccessResult("Kaydetme eklendi");
+            return new SuccessResult("Yorum eklendi");
         }
 
         public IResult Delete(PostSave postSave)
         {
             this._postSaveRepository.Delete(postSave);
-            return new SuccessResult("Kaydetme silindi");
+            return new SuccessResult("Yorum silindi");
         }
 
     }

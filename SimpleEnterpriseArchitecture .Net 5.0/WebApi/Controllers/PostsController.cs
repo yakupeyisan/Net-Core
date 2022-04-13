@@ -62,5 +62,11 @@ namespace WebApi.Controllers
             postAdd.UserId = int.Parse(claimsIdentity.Value);
             return Ok(_postService.Add(postAdd));
         }
+        public IActionResult AddComment(PostComment postComment)
+        {
+            var claimsIdentity = (this.User.Identity as ClaimsIdentity).Claims.GetNameIdentifier();
+            postComment.UserId = int.Parse(claimsIdentity.Value);
+            return Ok(this._postService.AddComment(postComment));
+        }
     }
 }

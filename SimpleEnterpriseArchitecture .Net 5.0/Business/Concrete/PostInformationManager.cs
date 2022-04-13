@@ -19,7 +19,7 @@ namespace Business.Concrete
         public IPostInformationRepository _postInformationRepository;
         public IPostLikeService _postLikeService;
         public IPostSaveService _postSaveService;
-        public IPostCommentRepository _postCommentRepository;
+        public IPostCommentService _postCommentService;
         private ICloudinaryService _cloudinaryService;
         private IPhotoService _photoService;
 
@@ -27,14 +27,14 @@ namespace Business.Concrete
             IPostInformationRepository postInformationRepository,
             IPostLikeService postLikeService,
             IPostSaveService postSaveService,
-            IPostCommentRepository postCommentRepository,
+            IPostCommentService postCommentService,
             ICloudinaryService cloudinaryService, 
             IPhotoService photoService)
         {
             _postInformationRepository = postInformationRepository;
             _postLikeService = postLikeService;
             _postSaveService = postSaveService;
-            _postCommentRepository = postCommentRepository;
+            _postCommentService = postCommentService;
             _cloudinaryService = cloudinaryService;
             _photoService = photoService;
         }
@@ -88,6 +88,11 @@ namespace Business.Concrete
             };
             _postInformationRepository.Add(post);
             return new SuccessResult("Gönderi Eklendi");
+        }
+
+        public IResult AddComment(PostComment postComment)
+        {
+            return this._postCommentService.Add(postComment);
         }
     }
 }

@@ -45,3 +45,4 @@ C:\Users\303MERTKAN_AKSAM\Documents\GitHub\Net-Core\SimpleEnterpriseArchitecture
 C:\Users\303MERTKAN_AKSAM\Documents\GitHub\Net-Core\SimpleEnterpriseArchitecture .Net 5.0\Integrations\obj\Debug\net5.0\ref\Integrations.dll
 C:\Users\303MERTKAN_AKSAM\Documents\GitHub\Net-Core\SimpleEnterpriseArchitecture .Net 5.0\Integrations\obj\Debug\net5.0\Integrations.pdb
 C:\Users\303MERTKAN_AKSAM\Documents\GitHub\Net-Core\SimpleEnterpriseArchitecture .Net 5.0\Integrations\obj\Debug\net5.0\Integrations.csproj.AssemblyReference.cache
+C:\Users\OrioN\Documents\GitHub\Net-Core\SimpleEnterpriseArchitecture .Net 5.0\Integrations\obj\Debug\net5.0\Integrations.csproj.AssemblyReference.cache

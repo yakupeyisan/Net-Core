@@ -31,6 +31,7 @@ namespace Business.DependencyResolvers.Autofac
             builder.RegisterType<PostInformationManager>().As<IPostInformationService>();
             builder.RegisterType<PostInformationRepository>().As<IPostInformationRepository>();
             builder.RegisterType<PostLikeRepository>().As<IPostLikeRepository>();
+            builder.RegisterType<PostCommentManager>().As<IPostCommentService>();
             builder.RegisterType<PostCommentRepository>().As<IPostCommentRepository>();
             builder.RegisterType<PostSaveRepository>().As<IPostSaveRepository>();
             builder.RegisterType<PostLikeManager>().As<IPostLikeService>();
